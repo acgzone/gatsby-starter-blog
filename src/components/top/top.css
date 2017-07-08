@@ -1,3 +1,7 @@
+/*div {
+  text-align: center;
+}*/
+
 .bar {
     width: 40px;
     height: 40px;
@@ -12,17 +16,19 @@
 }
 
 .Title {
-    margin: 0 2em;
+    margin: 0 1em;
 }
 
 .title {
     display: block;
     color: #595757;
-    font-size: 18px;
+    font-size: 0.9rem;
+    letter-spacing: 8px;
 }
 
 .rTitle {
     display: block;
     color: #999;
-    font-size: 14px;
+    font-size: 0.7rem;
+    letter-spacing: 8px;
 }
