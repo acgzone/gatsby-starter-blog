@@ -105,7 +105,6 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD HH:mm:ss")
         tags
-        math
       }
     }
   }
