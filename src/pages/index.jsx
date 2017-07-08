@@ -2,7 +2,6 @@ import React from "react"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
-import Bio from "../components/Bio"
 import { rhythm } from "../utils/typography"
 
 import styles from "../styles"
@@ -16,7 +15,7 @@ class Index extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
-        <Bio />
+        <h1>h2......</h1>
         <ul
             css={{
               marginBottom: rhythm(2),

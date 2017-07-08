@@ -1,7 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Link from "gatsby-link"
-import Bio from "../components/Bio"
 
 import styles from "../styles"
 import { rhythm, scale } from "../utils/typography"
@@ -78,7 +77,6 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(2),
           }}
         />
-        <Bio />
       </div>
     )
   }
