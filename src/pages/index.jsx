@@ -2,6 +2,7 @@ import React from "react"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
+import Banner from '../components/Banner'
 import { rhythm } from "../utils/typography"
 
 import styles from "../styles"
@@ -15,66 +16,99 @@ class Index extends React.Component {
     return (
       <div className="zhongjian">
         <Helmet title={siteTitle} />
-        <div className="title1">
-            <text>多彩课程</text>
-            <text className="more1">11</text>
-            <text className="more">更多</text>
-        </div>
-        <div className="index-tp">
-          <div className="index-mc">
-            <img src={require('./1.png')} className="index-tp-tp"></img>
-            <div className="index-tp-ms">日语</div>
-          </div>
-          <div className="index-mc">
-            <img src={require('./2.png')} className="index-tp-tp"></img>
-            <div className="index-tp-ms">日语</div>
-          </div>
-          <div className="index-mc">
-            <img src={require('./3.png')} className="index-tp-tp"></img>
-            <div className="index-tp-ms">日语</div>
-          </div>
-          <div className="index-mc">
-            <img src={require('./4.png')} className="index-tp-tp"></img>
-            <div className="index-tp-ms">日语</div>
-          </div>
-          <div className="index-mc">
-            <img src={require('./5.png')} className="index-tp-tp"></img>
-            <div className="index-tp-ms">日语</div>
-          </div>
-          <div className="index-mc">
-            <img src={require('./6.png')} className="index-tp-tp"></img>
-            <div className="index-tp-ms">日语</div>
-          </div>
-        </div>
-        <h1>h2......</h1>
-        <ul
+        <Banner css={{
+          height: '200px',
+        }}/>
+        <div id="main">
+          <div id="sidebar"
             css={{
-              marginBottom: rhythm(2),
-              marginTop: rhythm(2),
-              marginLeft: 0,
-              listStyle: `none`,
+              position: 'fixed',
+              right: 50,
+              top: 500,
+              width: '200px',
+              border: '1px solid red',
+              height: '500px', 
             }}
           >
+            边栏。。。
+          </div>
+          <div id="content">
+          <div id="course">
+            <div className="title1">
+                <text>多彩课程</text>
+                <text className="more1">11</text>
+                <text className="more">更多</text>
+            </div>
+            <div className="index-tp">
+              <div className="index-mc">
+                <img src={require('./1.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+              <div className="index-mc">
+                <img src={require('./2.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+              <div className="index-mc">
+                <img src={require('./3.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+              <div className="index-mc">
+                <img src={require('./4.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+              <div className="index-mc">
+                <img src={require('./5.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+              <div className="index-mc">
+                <img src={require('./6.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+            </div>
+          </div>
+          <div id="liuxue">
+            <div className="title1">
+                <text>留学日本</text>
+                <text className="more1">11</text>
+                <text className="more">更多</text>
+            </div>
+            <div className="index-tp">
+              <div className="index-mc">
+                <img src={require('./1.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+              <div className="index-mc">
+                <img src={require('./2.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+              <div className="index-mc">
+                <img src={require('./3.png')} className="index-tp-tp"></img>
+                <div className="index-tp-ms">日语</div>
+              </div>
+            </div>
+          </div>
+          <div id="news">
+            <div className="title1">
+                <text>最新资讯</text>
+                <text className="more1">11</text>
+                <text className="more">更多</text>
+            </div>
             {posts.map(post =>
-              <li key={post.node.fields.slug}>
-                <span
+              <Link to={post.node.fields.slug}>
+                <div key={post.node.fields.slug}
                   css={{
-                    color: styles.colors.light,
-                    display: `block`,
-                    [presets.Tablet]: {
-                      float: `right`,
-                      marginLeft: `1rem`,
-                    },
+                    display: 'inline-block',
+                    width: '40%',
                   }}
                 >
-                  {post.node.frontmatter.date}
-                </span>
-                <Link to={post.node.fields.slug} className="link-underline">
-                  {post.node.frontmatter.title}
-                </Link>
-              </li>
+                  <img src={require('./1.png')}></img>
+                  <div>{post.node.frontmatter.title}</div>
+                </div>
+              </Link>
             )}
-          </ul>
+          </div>
+          </div>
+          </div>
       </div>
     )
   }
