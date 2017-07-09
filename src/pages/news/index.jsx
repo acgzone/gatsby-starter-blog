@@ -2,10 +2,10 @@ import React from "react"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../../utils/typography"
 
-import styles from "../styles"
-import presets from "../utils/presets"
+import styles from "../../styles"
+import presets from "../../utils/presets"
 
 class Index extends React.Component {
   render() {
@@ -26,7 +26,7 @@ class Index extends React.Component {
             {posts.map(post =>
               <li key={post.node.fields.slug}>
                 <Link to={post.node.fields.slug} className="link-underline">
-                  <img src={require('./' + post.node.frontmatter.cover.relativePath)} />
+                  <img src={require('../' + post.node.frontmatter.cover.relativePath)} />
                   <h1>{post.node.frontmatter.title}</h1>
                   <p>{post.node.excerpt}</p>
                 </Link>
