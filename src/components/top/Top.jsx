@@ -32,9 +32,9 @@ const Top = () => {
                   <text className="rTitle">学院案内</text>
                   <text className="title">关于大成</text>
                   <div className="dropdown-content">
-                    <a href="#">大成简介</a>
-                    <a href="#">教学环境</a>
-                    <a href="#">团队介绍</a>
+                    <Link to="/aboutDc/">大成简介</Link>
+                    <Link to="/aboutDc/about1/">团队介绍</Link>
+                    <Link to="/aboutDc/about2/">教学环境</Link>
                   </div>
                 </div>
                 <img src={require("./xg.png")} className="xg"></img>
