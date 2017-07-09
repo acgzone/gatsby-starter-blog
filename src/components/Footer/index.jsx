@@ -5,7 +5,7 @@ import Link from "gatsby-link"
 import "typeface-montserrat"
 import "typeface-merriweather"
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../../utils/typography"
 import './footer.css'
 
 const Footer = () => {
