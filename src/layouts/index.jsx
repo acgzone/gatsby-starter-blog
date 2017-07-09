@@ -16,7 +16,7 @@ class DefaultLayout extends React.Component {
       <div>
         <Top />
         <div css={{height:'190px',}}/>
-        <div {...styles.container} {...styles.verticalPadding}>
+        <div>
           {this.props.children()}
         </div>
         <Footer />

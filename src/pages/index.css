@@ -1,0 +1,42 @@
+.zhongjian {
+    text-align: center;
+}
+
+.title1 {
+    display: flex;
+    width: 850px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.more {
+    flex: 1;
+    text-align: right;
+}
+
+.more1 {
+    flex: 18;
+    text-align: center;
+}
+
+.index-tp {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.index-mc {
+    display: inline-block;
+    position: relative;
+    width: 273px;
+    height: 186px;
+}
+
+.index-tp-ms {
+    position: absolute;
+    bottom: 0;
+}
+
+.index-tp-tp {
+    width: 273px;
+    height: 186px;
+}
