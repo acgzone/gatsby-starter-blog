@@ -25,9 +25,9 @@ class Index extends React.Component {
         <div className="about-u">
             <ul className="about-ul">
               <li className="about-li">关于大成</li>
-              <Link to="./aboutDc"><li className="about-lis">大成介绍</li></Link>
-              <Link to="./aboutDc/about1"><li className="about-lis">团队介绍</li></Link>
-              <Link to="./aboutDc/about2"><li className="about-lis">教学环境</li></Link>
+              <Link to="/aboutDc"><li className="about-lis">大成介绍</li></Link>
+              <Link to="/aboutDc/about1"><li className="about-lis">团队介绍</li></Link>
+              <Link to="/aboutDc/about2"><li className="about-lis">教学环境</li></Link>
             </ul>
           </div>
       </div>
