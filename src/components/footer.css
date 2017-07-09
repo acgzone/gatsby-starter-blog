@@ -5,7 +5,7 @@ div {
 .bg {
     background-image: url('./bg.jpg');
     position: relative;
-    height: 300px;
+    height: 325px;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-attachment: fixed;
