@@ -9,16 +9,9 @@ import { rhythm } from "../../utils/typography"
 import './top.css'
 
 const Top = () => {
-  const titleList = [
-      { title: "首页", rTitle: "ホーム" , link: "/"},
-      { title: '关于大成', rTitle: "学院案内" , link: "/"},
-      { title: '日语课程', rTitle: "コース紹介" , link: "/"},
-      { title: '日本留学', rTitle: "日本留学" , link: "/"},
-      { title: '最新资讯', rTitle: "日本留学" , link: "/"},
-      { title: '关于我们', rTitle: "コンタクト" , link: "/"}]
-  return <div >
+  return <div className="header">
           <div className="logo">
-            <img src={require("./btn01.png")} className="bar"></img>
+            <a href="#"><img src={require("./btn01.png")} className="bar"></img></a>
             <img
               css={{
                 width:"77px",
@@ -26,20 +19,64 @@ const Top = () => {
               }}
              src={require("./logo.png")}></img>
           </div>
-          <div className="logo">
-            {titleList.map(titleList =>
-              <Link
-                to={titleList.link}
-                css={{
-                  display: `inline-block`,
-                }}
-              >
+          <div className="caidan">
+            <div className="menu">
+              <Link to="/">
+                  <div className="Title">
+                    <text className="rTitle">ホーム</text>
+                    <text className="title">首页</text>
+                  </div>
+                </Link>
+                <img src={require("./xg.png")} className="xg"></img>
                 <div className="Title">
-                  <text className="rTitle">{titleList.rTitle}</text>
-                  <text className="title">{titleList.title}</text>
+                  <text className="rTitle">学院案内</text>
+                  <text className="title">关于大成</text>
+                  <div className="dropdown-content">
+                    <a href="#">大成简介</a>
+                    <a href="#">教学环境</a>
+                    <a href="#">团队介绍</a>
+                  </div>
                 </div>
-              </Link>
-            )}
+                <img src={require("./xg.png")} className="xg"></img>
+                <div className="Title">
+                  <text className="rTitle">コース紹介</text>
+                  <text className="title">日语课程</text>
+                  <div className="dropdown-content">
+                    <a href="#">日语等级课程</a>
+                    <a href="#">日语留学课程</a>
+                    <a href="#">日语入门课程</a>
+                    <a href="#">口语课程</a>
+                    <a href="#">兴趣课程</a>
+                    <a href="#">旅游课程</a>
+                    <a href="#">少儿课程</a>
+                    <a href="#">特别定制课程</a>
+                  </div>
+                </div>
+                <img src={require("./xg.png")} className="xg"></img>
+                <div className="Title">
+                  <text className="rTitle">日本留学</text>
+                  <text className="title">日本留学</text>
+                  <div className="dropdown-content">
+                    <a href="#">高中生留学</a>
+                    <a href="#">大学生留学</a>
+                    <a href="#">工作后留学</a>
+                  </div>
+                </div>
+                <img src={require("./xg.png")} className="xg"></img>
+                <Link to="/">
+                  <div className="Title">
+                    <text className="rTitle">最新情報</text>
+                    <text className="title">最新资讯</text>
+                  </div>
+                </Link>
+                <img src={require("./xg.png")} className="xg"></img>
+                <Link to="/">
+                  <div className="Title">
+                    <text className="rTitle">コンタクト</text>
+                    <text className="title">关于我们</text>
+                  </div>
+                </Link>
+            </div>
           </div>
         </div>
 }

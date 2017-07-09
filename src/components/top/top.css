@@ -2,33 +2,80 @@
   text-align: center;
 }*/
 
+.header {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+}
+
 .bar {
     width: 40px;
     height: 40px;
     position: absolute;
-    left: 20%;
+    left: 0;
     top: 15px;
 }
 
 .logo {
-    text-align: center;
+    margin: 0 auto;
     position: relative;
+    max-width: 1200px;
+}
+
+.caidan {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.xg {
+    display: inline-block;
+    height: 1.8em;
+    vertical-align: middle;
 }
 
 .Title {
     margin: 0 1em;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 6em;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1000；
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0 6px;
+    font-size: 0.7rem;
+    color: #696969
+}
+
+.Title:hover .dropdown-content {
+    display: block;
 }
 
 .title {
     display: block;
     color: #595757;
     font-size: 0.9rem;
-    letter-spacing: 8px;
+    letter-spacing: 1rem;
 }
 
 .rTitle {
     display: block;
     color: #999;
     font-size: 0.7rem;
-    letter-spacing: 8px;
+    letter-spacing: 1rem;
 }
