@@ -1,0 +1,96 @@
+.liuxues {
+    max-width: 1200rpx;
+    margin: 0 auto;
+    position: relative;
+}
+
+.liuxue {
+    width: 850px;
+    margin: 0 auto;
+    padding-right: 280px;
+}
+
+.liuxue-img {
+}
+.liuxue-h3{
+    color: #595757;
+    font-weight: bold;
+}
+.liuxue-title {
+    padding: 0px 0;
+    width: 850px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+.liuxue-neirong {
+    color: #5f5f5f;
+    line-height: 2.8em;
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.liuxue-xin {
+    font-size: 1.2rem;
+    color: #ffb700;
+    margin-left: 10px;
+    width: 850px;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.liuxue-biaoti {
+    font-size: 1.2rem;
+    color: #595757;
+    margin-left: 10px;
+    width: 850px;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.liuxue-biaoti1 {
+    font-size: 0.9rem;
+    color: #333;
+    margin-left: 10px;
+    width: 850px;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.liuxue-biaoti-zhu {
+    font-size: 0.9rem;
+    color: #ffb700;
+    margin-left: 10px;
+    width: 850px;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.liuxue-u {
+    position: fixed;
+    width: 200px;
+    right: 100px;
+    top: 200px;
+    z-index: 4;
+    border: 1px solid #e5e5e5;
+}
+
+.liuxue-ul {
+    list-style: none;
+    margin: 0;
+}
+
+.liuxue-li {
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.liuxue-lis {
+    background-color: #fbfbfb;
+    border-top: 1px solid #e5e5e5;
+    margin: 0;
+    padding: 10px 0;
+    color: #333;
+}
