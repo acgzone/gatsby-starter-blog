@@ -1,0 +1,48 @@
+.aboutus {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aboutus-lxwm {
+    /*vertical-align: middle;*/
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.aboutus-tx {
+    /*vertical-align: middle;*/
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.aboutus-xs {
+    /*vertical-align: middle;*/
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 180px;
+}
+
+.aboutus-nr {
+    padding-left: 142px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.aboutus-khbz {
+    text-align: left;
+}
+
+.aboutus-h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.aboutus-xx {
+    padding-left: 192px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    line-height: 60px;
+}
