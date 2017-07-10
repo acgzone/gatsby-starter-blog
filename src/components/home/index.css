@@ -1,16 +1,11 @@
-.zhongjian {
-    text-align: center;
-}
-
 .title1 {
     display: flex;
-    width: 850px;
     text-align: center;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .more {
-    flex: 1;
+    flex: 3;
     text-align: right;
 }
 
@@ -29,9 +24,11 @@
     position: relative;
     width: 273px;
     height: 186px;
+    margin: 5px;
 }
 
 .index-tp-ms {
+    color: white;
     position: absolute;
     bottom: 0;
 }
@@ -39,4 +36,12 @@
 .index-tp-tp {
     width: 273px;
     height: 186px;
+}
+
+#course {
+    margin-top: 30px;
+}
+
+#news div img {
+    margin: 5px;
 }
