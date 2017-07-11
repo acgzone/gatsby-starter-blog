@@ -15,7 +15,7 @@ class DefaultLayout extends React.Component {
     return (
       <div>
         <Top />
-        <div css={{height:'190px',}}/>
+        <div css={{height:'139px',}}/>
         <div>
           {this.props.children()}
         </div>

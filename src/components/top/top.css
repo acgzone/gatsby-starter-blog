@@ -1,8 +1,4 @@
-/*div {
-  text-align: center;
-}*/
-
-.header {
+header {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
     text-align: left;
     position: fixed;
@@ -10,9 +6,17 @@
     left: 0;
     top: 0;
     z-index: 4;
-    background: #fff;
+    background: white;
+    padding: 0;
+    margin: 0;
 }
 
+.logo {
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
 .bar {
     width: 40px;
     height: 40px;
@@ -20,33 +24,43 @@
     left: 0;
     top: 15px;
 }
-
-.logo {
-    margin: 0 auto;
-    position: relative;
-    max-width: 1200px;
+.logo img {
+    text-align: center;
 }
 
-.caidan {
+.nav {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
-}
-
-.menu {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.xg {
-    display: inline-block;
-    height: 1.8em;
-    vertical-align: middle;
+.nav ul {
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
-
-.Title {
-    margin: 0 1em;
-    display: inline-block;
+.nav li {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+}
+.nav li ::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background: #e5e5e5;
+    position: absolute;
+    transform: rotate(30deg);
+    top: 50%;
+    margin-top: -12px;
+}
+.nav .noslash ::before {
+    display: none;
 }
 
 .dropdown-content {
@@ -55,7 +69,8 @@
     background-color: #fff;
     min-width: 6em;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-    z-index: 1000；
+    z-index: 1000;
+    width: 100%;
 }
 
 .dropdown-content a {
@@ -69,7 +84,7 @@
     color: #696969
 }
 
-.Title:hover .dropdown-content {
+li:hover .dropdown-content {
     display: block;
 }
 
@@ -77,12 +92,11 @@
     display: block;
     color: #595757;
     font-size: 0.9rem;
-    letter-spacing: 1rem;
 }
 
 .rTitle {
+    height: 25px;
     display: block;
     color: #999;
-    font-size: 0.7rem;
-    letter-spacing: 1rem;
+    font-size: 0.5rem;
 }
