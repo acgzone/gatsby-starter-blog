@@ -9,7 +9,7 @@ import { rhythm } from "../../utils/typography"
 import './footer.css'
 
 const Footer = () => {
-  return <div>
+  return <div className="footers">
       <div className="bg">
         <div className="content">
           <img src={require('./bg_text.png')}/>
