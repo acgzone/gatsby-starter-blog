@@ -1,13 +1,12 @@
 .abouts {
-    max-width: 1200rpx;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
 .about {
     width: 850px;
-    margin: 0 auto;
-    padding-right: 280px;
+    float: left;
 }
 
 .about-img {
@@ -17,6 +16,7 @@
 
 .about-title {
     padding: 0px 0;
+    font-weight: bold;
 }
 
 .about-neirong {
@@ -25,6 +25,7 @@
     font-size: 0.9rem;
     text-align: left;
     display: inline-block;
+    margin-bottom: 35px;
 }
 
 .about-u {
