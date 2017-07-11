@@ -9,7 +9,7 @@ class About2 extends React.Component {
   render() {
 
     return (
-      <div className="about">
+      <div className="abouts">
         <div className="about">
             <img src={require('./33envi_01.png')} className="about-img"></img>
             <h2 className="about-title">大成日语</h2>

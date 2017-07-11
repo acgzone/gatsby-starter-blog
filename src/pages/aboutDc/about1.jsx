@@ -9,7 +9,7 @@ class About1 extends React.Component {
   render() {
 
     return (
-      <div className="about">
+      <div className="abouts">
         <div className="about">
             <h2 className="about-title">教日语，我们是认真的</h2>
             <div className="about-neirong">
