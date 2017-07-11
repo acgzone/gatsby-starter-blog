@@ -9,7 +9,13 @@ import presets from "../../utils/presets"
 import './index.css'
 const Index = () => {
   return (
-<div className="course">
+<div>
+    <div className="course-daohang">
+        <div className="course-daohang1">
+            <img src={require('./course.png')} className="course-daohang2"></img><span>首页</span> &gt;<span>日语课程</span>
+        </div>
+    </div>
+    <div className="courses">
         <div className="course" id="ryrm">
             <img src={require('./course_01.png')} className="course-img"></img>
             <h2 className="course-title">日语入门课程</h2>
@@ -137,20 +143,21 @@ const Index = () => {
             <div className="course-biaoti1">1、	时间不太固定的同学</div>
             <div className="course-biaoti1">2、	希望按照自己的要求学习的同学</div>
         </div>
-        <div className="course-u">
-            <ul className="course-ul">
-              <li className="course-li">日语课程</li>
-              <Link to="/course#ryrm"><li className="course-lis">日语入门课程</li></Link>
-              <Link to="/course#rydj"><li className="course-lis">日语等级课程</li></Link>
-              <Link to="/course#rylx"><li className="course-lis">口语课程</li></Link>
-              <Link to="/course#ky"><li className="course-lis">日语留学课程</li></Link>
-              <Link to="/course#xq"><li className="course-lis">兴趣课程</li></Link>
-              <Link to="/course#ly"><li className="course-lis">旅游日语</li></Link>
-              <Link to="/course#se"><li className="course-lis">少儿日语</li></Link>
-              <Link to="/course#tbdz"><li className="course-lis">特别定制课程</li></Link>
-            </ul>
-          </div>
-      </div>
+    </div>
+    <div className="course-u">
+        <ul className="course-ul">
+            <li className="course-li">日语课程</li>
+            <Link to="/course#ryrm"><li className="course-lis">日语入门课程</li></Link>
+            <Link to="/course#rydj"><li className="course-lis">日语等级课程</li></Link>
+            <Link to="/course#rylx"><li className="course-lis">口语课程</li></Link>
+            <Link to="/course#ky"><li className="course-lis">日语留学课程</li></Link>
+            <Link to="/course#xq"><li className="course-lis">兴趣课程</li></Link>
+            <Link to="/course#ly"><li className="course-lis">旅游日语</li></Link>
+            <Link to="/course#se"><li className="course-lis">少儿日语</li></Link>
+            <Link to="/course#tbdz"><li className="course-lis">特别定制课程</li></Link>
+        </ul>
+    </div>
+</div>
   )
 }
 
