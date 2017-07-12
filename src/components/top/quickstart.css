@@ -1,0 +1,28 @@
+.quickstart {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quickstart-nr {
+    display: inline-block;
+    position: relative;
+}
+
+.quickstart-nr-img {
+    width: 355px;
+    height: 225px;
+    margin: 0 10px;
+    border: 1px solid #fff;
+}
+
+.quickstart-nr-span {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.36);
+    color: #fff;
+    padding: 0 10px;
+    border: 1px solid #e5e5e5;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
