@@ -7,8 +7,6 @@ const Index = (props) => {
      width: "100%",
     margin: "0 auto",
     marginTop: 140,
-    position: "fixed",
-    zIndex: 100
   }}>
     <div className="quickstart">
       <Link to="/course#ryrm">
