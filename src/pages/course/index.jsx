@@ -146,7 +146,7 @@ const Index = () => {
     </div>
     <div className="course-u">
         <ul className="course-ul">
-            <li className="course-li">日语课程</li>
+            <li className="course-li"><img src={require('./course.png')} className="course-daohang2"/>日语课程</li>
             <Link to="/course#ryrm"><li className="course-lis">日语入门课程</li></Link>
             <Link to="/course#rydj"><li className="course-lis">日语等级课程</li></Link>
             <Link to="/course#rylx"><li className="course-lis">口语课程</li></Link>
