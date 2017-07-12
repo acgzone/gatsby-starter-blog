@@ -49,6 +49,55 @@
     margin-bottom: 35px;
 }
 
+.about-ls {
+    width: 850px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about-ls-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-ls-r {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.about-ls-img {
+    margin-left: 40px;
+    margin-top: 28px;
+    margin-right: 28px;
+    display: inline-block;
+    width: 180px;
+    height: 200px;
+    vertical-align: top;
+}
+
+.about-ls-js {
+    display: inline-block;
+    width: 580px;
+    margin-top: 28px;
+    text-align: left;
+}
+
+.about-ls-ls {
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px dotted #e5e5e5;
+    padding-bottom: 15px;
+}
+
+.about-ls-nr {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
 .about-u {
     position: fixed;
     width: 200px;
