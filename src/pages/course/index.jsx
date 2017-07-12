@@ -149,8 +149,8 @@ const Index = () => {
             <li className="course-li"><img src={require('./course.png')} className="course-daohang2"/>日语课程</li>
             <Link to="/course#ryrm"><li className="course-lis">日语入门课程</li></Link>
             <Link to="/course#rydj"><li className="course-lis">日语等级课程</li></Link>
-            <Link to="/course#rylx"><li className="course-lis">口语课程</li></Link>
-            <Link to="/course#ky"><li className="course-lis">日语留学课程</li></Link>
+            <Link to="/course#ky"><li className="course-lis">口语课程</li></Link>
+            <Link to="/course#rylx"><li className="course-lis">日语留学课程</li></Link>
             <Link to="/course#xq"><li className="course-lis">兴趣课程</li></Link>
             <Link to="/course#ly"><li className="course-lis">旅游日语</li></Link>
             <Link to="/course#se"><li className="course-lis">少儿日语</li></Link>
