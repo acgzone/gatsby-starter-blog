@@ -12,7 +12,7 @@ class Index extends React.Component {
       <div>
         <div className="about-daohang">
             <div className="about-daohang1">
-                <img src={require('./about us.png')} className="about-daohang2"></img><span>首页</span> &gt;<span>日语课程</span>
+                <img src={require('./about us.png')} className="about-daohang2"></img><span>首页</span> &gt;<span>大成介绍</span>
             </div>
         </div>
         <div className="abouts">
@@ -30,7 +30,7 @@ class Index extends React.Component {
           </div>
           <div className="about-u">
               <ul className="about-ul">
-                <li className="about-li">关于大成</li>
+                <li className="about-li"><img src={require('./about us.png')} className="about-daohang2"/>关于大成</li>
                 <Link to="/aboutDc"><li className="about-lis">大成介绍</li></Link>
                 <Link to="/aboutDc/about1"><li className="about-lis">团队介绍</li></Link>
                 <Link to="/aboutDc/about2"><li className="about-lis">教学环境</li></Link>

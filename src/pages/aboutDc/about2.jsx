@@ -10,6 +10,11 @@ class About2 extends React.Component {
 
     return (
       <div className="abouts">
+        <div className="about-daohang">
+            <div className="about-daohang1">
+                <img src={require('./about us.png')} className="about-daohang2"></img><span>首页</span> &gt;<span>教学环境</span>
+            </div>
+        </div>
         <div className="about">
             <img src={require('./33envi_01.png')} className="about-img"></img>
             <h2 className="about-title">大成日语</h2>
@@ -23,7 +28,7 @@ class About2 extends React.Component {
         </div>
         <div className="about-u">
             <ul className="about-ul">
-              <li className="about-li">关于大成</li>
+              <li className="about-li"><img src={require('./about us.png')} className="about-daohang2"/>关于大成</li>
               <Link to="../aboutDc"><li className="about-lis">大成介绍</li></Link>
               <Link to="./about1"><li className="about-lis">团队介绍</li></Link>
               <Link to="./about2"><li className="about-lis">教学环境</li></Link>
