@@ -9,7 +9,12 @@ import presets from "../../utils/presets"
 import './index.css'
 const Index = () => {
   return (
-    <div className="liuxue">
+    <div className="liuxues">
+        <div className="liuxue-daohang">
+            <div className="liuxue-daohang1">
+                <img src={require('./liuxue.png')} className="liuxue-daohang2"></img><span>首页</span> &gt;<span>日语课程</span>
+            </div>
+        </div>
         <div className="liuxue" id="gaozhong">
             <img src={require('./Overseas_01.png')} className="liuxue-img"></img>
             <h3 className="liuxue-h3">高中生留学</h3>
@@ -77,7 +82,7 @@ const Index = () => {
         </div>
         <div className="liuxue-u">
             <ul className="liuxue-ul">
-              <li className="liuxue-li">日本留学</li>
+              <li className="liuxue-li"><img src={require('./liuxue.png')}/>日本留学</li>
               <Link to="/liuxue#gaozhong"><li className="liuxue-lis">高中生留学</li></Link>
               <Link to="/liuxue#daxue"><li className="liuxue-lis">大学生留学</li></Link>
               <Link to="/liuxue#work"><li className="liuxue-lis">工作后留学</li></Link>
