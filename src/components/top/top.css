@@ -17,13 +17,13 @@ header {
     position: relative;
     max-width: 1200px;
 }
+
 .bar {
-    width: 40px;
-    height: 40px;
     position: absolute;
     left: 0;
     top: 15px;
 }
+
 .logo img {
     text-align: center;
 }
@@ -43,11 +43,13 @@ header {
     width: 100%;
     table-layout: fixed;
 }
+
 .nav li {
     display: table-cell;
     position: relative;
     text-align: center;
 }
+
 .nav li ::before {
     content: "";
     display: block;
@@ -59,6 +61,7 @@ header {
     top: 50%;
     margin-top: -12px;
 }
+
 .nav .noslash ::before {
     display: none;
 }
