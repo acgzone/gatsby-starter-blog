@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from "gatsby-link"
 
-import Quickstart from './Quickstart'
-
 // Import typefaces
 import "typeface-montserrat"
 import "typeface-merriweather"
@@ -80,32 +78,4 @@ const Top = ({ quickstart, clickQuickstart }) => {
   </header>
 }
 
-class Header extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      quickstart: false,
-    }
-  }
-  onClick() {
-    console.log('onclick...')
-    this.setState({
-      quickstart: !this.state.quickstart,
-    })
-  }
-
-  render() {
-    const header = this.state.quickstart ?
-      <div>
-        <Top quickstart={true} clickQuickstart={this.onClick.bind(this)} />
-        <Quickstart />
-      </div>
-      :
-      <Top quickstart={false} clickQuickstart={this.onClick.bind(this)} />
-
-    return (
-      header
-    )
-  }
-}
-export default Header;
+export default Top;
