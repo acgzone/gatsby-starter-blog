@@ -18,9 +18,10 @@ class Index extends React.Component {
     this.state = {
       showSideBar: false,
     }
+    this.handleScroll = this.handleScroll.bind(this);// 直接把this.handleScroll.bind(this);写在addEventListener和removeEventListener里面的话，会导致两次bind(this)的不是同一个函数，会remove不掉，存在内存泄露
   }
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll.bind(this));
+    window.addEventListener('scroll', this.handleScroll);
   }
   componentWillUnmount() {
     console.log('componentWillUnmount: remove handleScroll')
@@ -28,7 +29,7 @@ class Index extends React.Component {
   }
   handleScroll(e) {
     const scrollTop = this.getScrollTop();
-    console.log('scroll...', scrollTop)
+    // console.log('scroll...', scrollTop)
     // todo 缩放比例会影响这个值， 应该也要“自适应”屏幕大小
     if (scrollTop > 420) {
       this.setState({
