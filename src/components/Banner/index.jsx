@@ -1,31 +1,39 @@
 import React from 'react'
 
+import Link from "gatsby-link"
+
 import Slider from 'react-slick'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import './banner.css'
+
 class Demo extends React.Component {
-  render() {
-    const settings = {
-      accessibility: true,
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      // autoplay: true,
-      arrows: true,
-      useCSS: true,
-    };
-    return (
-      <Slider {...settings}>
-                    <img src={require("./banner1.png")}/>
-                    <img src={require("./banner2.jpg")} />
-                    <img src={require("./banner3.jpg")} />
-      </Slider>
-    );
-  }
+    render() {
+        const settings = {
+            accessibility: true,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            centerPadding: '50px',
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: true,
+            centerMode: true,
+            className: "center",
+        };
+        return (
+            <Slider {...settings} >
+                <li className="slick-item"><Link to='/'><img src={require("./banner1.png")} /></Link></li>
+                <li className="slick-item"><Link to='/'><img src={require("./banner2.jpg")} /></Link></li>
+                <li className="slick-item"><Link to='/'><img src={require("./banner3.jpg")} /></Link></li>
+                <li className="slick-item"><Link to='/'><img src={require("./banner4.jpg")} /></Link></li>
+                <li className="slick-item"><Link to='/'><img src={require("./banner5.jpg")} /></Link></li>
+            </Slider>
+        );
+    }
 }
 
 export default Demo;
