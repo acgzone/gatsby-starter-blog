@@ -93,11 +93,12 @@
 
 .liuxue-u {
     position: fixed;
-    width: 200px;
+    width: 190px;
     right: 100px;
     top: 200px;
     z-index: 4;
     border: 1px solid #e5e5e5;
+    text-align: left;
 }
 
 .liuxue-ul {
@@ -108,7 +109,8 @@
 .liuxue-li {
     background-color: #e8e8e8;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 20px;
+    font-size: 0.9rem;
 }
 
 .liuxue-lis {
@@ -117,4 +119,6 @@
     margin: 0;
     padding: 10px 0;
     color: #333;
+    padding-left: 52px;
+    font-size: 0.9rem;
 }

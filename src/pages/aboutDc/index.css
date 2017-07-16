@@ -100,11 +100,12 @@
 
 .about-u {
     position: fixed;
-    width: 200px;
+    width: 180px;
     right: 100px;
     top: 200px;
     z-index: 4;
     border: 1px solid #e5e5e5;
+    text-align: left;
 }
 
 .about-ul {
@@ -115,7 +116,8 @@
 .about-li {
     background-color: #e8e8e8;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 20px;
+    font-size: 0.9rem;
 }
 
 .about-lis {
@@ -123,5 +125,7 @@
     border-top: 1px solid #e5e5e5;
     margin: 0;
     padding: 10px 0;
+    padding-left: 52px;
     color: #333;
+    font-size: 0.9rem;
 }

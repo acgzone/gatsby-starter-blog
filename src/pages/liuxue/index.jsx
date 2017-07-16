@@ -82,7 +82,7 @@ const Index = () => {
         </div>
         <div className="liuxue-u">
             <ul className="liuxue-ul">
-              <li className="liuxue-li"><img src={require('./liuxue.png')}/>日本留学</li>
+              <li className="liuxue-li"><img src={require('./liuxue.png')} className="liuxue-daohang2"/>日本留学</li>
               <Link to="/liuxue#gaozhong"><li className="liuxue-lis">高中生留学</li></Link>
               <Link to="/liuxue#daxue"><li className="liuxue-lis">大学生留学</li></Link>
               <Link to="/liuxue#work"><li className="liuxue-lis">工作后留学</li></Link>

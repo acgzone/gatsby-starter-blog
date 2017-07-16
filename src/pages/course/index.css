@@ -93,6 +93,7 @@
     top: 200px;
     z-index: 4;
     border: 1px solid #e5e5e5;
+    text-align: left;
 }
 
 .course-ul {
@@ -103,7 +104,8 @@
 .course-li {
     background-color: #e8e8e8;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 20px;
+    font-size: 0.9rem;
 }
 
 .course-lis {
@@ -112,4 +114,6 @@
     margin: 0;
     padding: 10px 0;
     color: #333;
+    font-size: 0.9rem;
+    padding-left: 52px;
 }
