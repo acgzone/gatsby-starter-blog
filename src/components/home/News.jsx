@@ -19,13 +19,14 @@ const News = ({ posts }) => {
       </div>
       <div className="title-new">
         {posts.map(post =>
+        
           <Link to={post.node.fields.slug}>
             <div key={post.node.fields.slug}
               css={{
                 display: 'inline-block',
               }}
             >
-              <img src={require('./1.png')} className="news-img"></img>
+              <img src={require('./15news_01.png')} className="news-imgs"></img>
               <div>{post.node.frontmatter.title}</div>
             </div>
           </Link>
