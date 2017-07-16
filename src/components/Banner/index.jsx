@@ -27,10 +27,10 @@ class Demo extends React.Component {
         return (
             <Slider {...settings} >
                 <li className="slick-item"><Link to='/'><img src={require("./banner1.png")} /></Link></li>
-                <li className="slick-item"><Link to='/'><img src={require("./banner2.jpg")} /></Link></li>
-                <li className="slick-item"><Link to='/'><img src={require("./banner3.jpg")} /></Link></li>
-                <li className="slick-item"><Link to='/'><img src={require("./banner4.jpg")} /></Link></li>
-                <li className="slick-item"><Link to='/'><img src={require("./banner5.jpg")} /></Link></li>
+                <li className="slick-item"><Link to='/'><img src={require("./banner2.png")} /></Link></li>
+                <li className="slick-item"><Link to='/'><img src={require("./banner3.png")} /></Link></li>
+                <li className="slick-item"><Link to='/'><img src={require("./banner4.png")} /></Link></li>
+                <li className="slick-item"><Link to='/'><img src={require("./banner5.png")} /></Link></li>
             </Slider>
         );
     }
