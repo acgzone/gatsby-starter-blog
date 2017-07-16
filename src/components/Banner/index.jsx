@@ -12,17 +12,25 @@ import './banner.css'
 class Demo extends React.Component {
     render() {
         const settings = {
-            accessibility: true,
+            // accessibility: true,
             dots: true,
             infinite: true,
-            speed: 500,
+            // speed: 5000,
             slidesToShow: 1,
-            centerPadding: '50px',
+            centerPadding: '0px',
             slidesToScroll: 1,
             autoplay: true,
-            arrows: true,
+            autoplaySpeed: 2000,
             centerMode: true,
             className: "center",
+            variableWidth: true,
+            initialSlide: 3,
+            beforeChange: function (currentSlide, nextSlide) {
+                console.log('before change', currentSlide, nextSlide);
+            },
+            afterChange: function (currentSlide) {
+                console.log('after change', currentSlide);
+            },
         };
         return (
             <Slider {...settings} >
