@@ -7,10 +7,6 @@ import Liuxue from './Liuxue'
 import News from './News'
 import Link from "gatsby-link"
 
-import { rhythm } from "../../utils/typography"
-
-import styles from "../../styles"
-import presets from "../../utils/presets"
 import './index.css'
 
 class Index extends React.Component {

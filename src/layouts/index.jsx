@@ -1,15 +1,8 @@
 import React from "react"
 import Link from "gatsby-link"
-import { rhythm, scale } from "../utils/typography"
-import styles from "../styles"
-import presets from "../utils/presets"
 import Footer from "../components/Footer"
 import Top from "../components/top/Top"
 import Quickstart from '../components/top/Quickstart'
-
-import "typeface-space-mono"
-import "typeface-spectral"
-require(`prismjs/themes/prism-solarizedlight.css`)
 
 class DefaultLayout extends React.Component {
   constructor() {

@@ -1,11 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
-
-import { rhythm } from "../../utils/typography"
-
-import styles from "../../styles"
-import presets from "../../utils/presets"
 import './index.css'
 class Index extends React.Component {
   render() {
@@ -17,8 +12,8 @@ class Index extends React.Component {
         <p className="news-title"><img src={require('./news.png')}/>&nbsp;&nbsp;&nbsp;最新资讯</p>
         <ul
             css={{
-              marginBottom: rhythm(2),
-              marginTop: rhythm(0),
+              marginBottom: "30px",
+              marginTop:0,
               marginLeft: 0,
               listStyle: `none`,
             }}

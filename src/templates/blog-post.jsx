@@ -2,10 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import Link from "gatsby-link"
 
-import styles from "../styles"
-import { rhythm, scale } from "../utils/typography"
-import presets from "../utils/presets"
-
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -43,14 +39,15 @@ class BlogPostTemplate extends React.Component {
     return (
       <div
         css={{
-          maxWidth: rhythm(26),
+          maxWidth: "1200px",
+              margin: "0 auto"
         }}
       >
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         {
           post.frontmatter.math ? <Helmet script={[{src: `//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML`, type: `text/javascript`}]} /> : ''
         }
-        <header>
+        {/*<header>
           <h1
             css={{
               marginBottom: rhythm(1 / 6),
@@ -69,12 +66,12 @@ class BlogPostTemplate extends React.Component {
             {post.frontmatter.date}
             {post.timeToRead} min read &middot; {tagsSection}
           </p>
-        </header>
+        </header>*/}
         <div dangerouslySetInnerHTML={{ __html: post.html }} className="post" />
         <hr
           css={{
-            marginBottom: rhythm(1),
-            marginTop: rhythm(2),
+            marginBottom: "16px",
+            marginTop: "30px",
           }}
         />
       </div>
