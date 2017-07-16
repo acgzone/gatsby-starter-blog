@@ -88,7 +88,7 @@
 
 .course-u {
     position: fixed;
-    width: 200px;
+    width: 150px;
     right: 100px;
     top: 200px;
     z-index: 4;
@@ -104,7 +104,7 @@
 .course-li {
     background-color: #e8e8e8;
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 0px;
     font-size: 0.9rem;
 }
 
@@ -115,5 +115,5 @@
     padding: 10px 0;
     color: #333;
     font-size: 0.9rem;
-    padding-left: 52px;
+    padding-left: 32px;
 }

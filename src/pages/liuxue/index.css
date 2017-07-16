@@ -93,7 +93,7 @@
 
 .liuxue-u {
     position: fixed;
-    width: 190px;
+    width: 150px;
     right: 100px;
     top: 200px;
     z-index: 4;
@@ -109,7 +109,7 @@
 .liuxue-li {
     background-color: #e8e8e8;
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 0.9rem;
 }
 
@@ -119,6 +119,6 @@
     margin: 0;
     padding: 10px 0;
     color: #333;
-    padding-left: 52px;
+    padding-left: 42px;
     font-size: 0.9rem;
 }
