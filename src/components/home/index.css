@@ -2,16 +2,47 @@
     display: flex;
     text-align: center;
     width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.title-dc-dc {
+    text-align: left;
+}
+
+.title-dc {
+    font-size: 0.7rem;
+    color: #333;
+    display: block;
+    line-height: 20px;
+}
+
+.title-dc1 {
+    font-size: 0.5rem;
+    color: #999;
+    display: block;
+    line-height: 20px;
 }
 
 .more {
-    flex: 3;
-    text-align: right;
+    display: block;
+    font-size: 0.7rem;
+    color: #999;
+    line-height: 20px;
+}
+
+.more-r {
+    display: block;
+    font-size: 0.5rem;
+    color: #999;
+    line-height: 20px;
 }
 
 .more1 {
     flex: 18;
     text-align: center;
+    color: #999;
+    font-size: 0.5rem;
 }
 
 .index-tp {
@@ -27,10 +58,23 @@
     margin: 5px;
 }
 
+.index-mc:hover .index-tp-ms {
+    background-color: rgba(30, 30, 30, 0.9)
+}
+
+.title-more {
+    flex: 3;
+    text-align: right;
+}
+
 .index-tp-ms {
     color: white;
     position: absolute;
     bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    background-color: rgba(30, 30, 30, 0.58)
 }
 
 .index-tp-tp {
