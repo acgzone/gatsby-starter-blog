@@ -36,10 +36,10 @@ const Top = ({ quickstart, clickQuickstart }) => {
           <span className="rTitle">コース紹介</span>
           <span className="title">日语课程</span>
           <div className="dropdown-content">
-            <Link to="/course#rydj">日语等级课程</Link>
-            <Link to="/course#rylx">日语留学课程</Link>
             <Link to="/course#ryrm">日语入门课程</Link>
+            <Link to="/course#rydj">日语等级课程</Link>
             <Link to="/course#ky">口语课程</Link>
+            <Link to="/course#rylx">日语留学课程</Link>
             <Link to="/course#xq">兴趣课程</Link>
             <Link to="/course#ly">旅游课程</Link>
             <Link to="/course#se">少儿课程</Link>
