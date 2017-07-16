@@ -5,6 +5,7 @@ import Banner from '../Banner'
 import Course from './Course'
 import Liuxue from './Liuxue'
 import News from './News'
+import Link from "gatsby-link"
 
 import { rhythm } from "../../utils/typography"
 
@@ -31,7 +32,7 @@ class Index extends React.Component {
     const scrollTop = this.getScrollTop();
     // console.log('scroll...', scrollTop)
     // todo 缩放比例会影响这个值， 应该也要“自适应”屏幕大小
-    if (scrollTop > 420) {
+    if (scrollTop > 500) {
       this.setState({
         showSideBar: true,
       })
@@ -60,17 +61,15 @@ class Index extends React.Component {
         <Banner />
         <div id="main">
           {this.state.showSideBar ?
-            <div id="sidebar"
-              css={{
-                position: 'fixed',
-                right: 20,
-                bottom: 50,
-                width: '200px',
-                border: '1px solid red',
-                height: '300px',
-              }}
-            >
-              边栏。。。
+            <div className="index-u">
+              <ul className="index-ul">
+                  <li className="index-li"><img src={require('./index.png')}/>&nbsp;&nbsp;首页</li>
+                  <Link to="/aboutDc"><li className="index-lis"><img src={require('./about us.png')}/>&nbsp;&nbsp;关于大成</li></Link>
+                  <Link to="/course"><li className="index-lis"><img src={require('./course.png')}/>&nbsp;&nbsp;日语课程</li></Link>
+                  <Link to="/liuxue"><li className="index-lis"><img src={require('./oversea.png')}/>&nbsp;&nbsp;日本留学</li></Link>
+                  <Link to="/news"><li className="index-lis"><img src={require('./news.png')}/>&nbsp;&nbsp;最新资讯</li></Link>
+                  <Link to="/aboutus"><li className="index-lis"><img src={require('./contact.png')}/>&nbsp;&nbsp;关于我们</li></Link>
+              </ul>
           </div>
             : ''}
           <div id="content" css={{

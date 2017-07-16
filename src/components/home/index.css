@@ -99,3 +99,37 @@
 #news div img {
     margin: 5px;
 }
+
+.index-u {
+    position: fixed;
+    width: 180px;
+    right: 100px;
+    top: 200px;
+    z-index: 4;
+    border: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+.index-ul {
+    list-style: none;
+    margin: 0;
+}
+
+.index-li {
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    padding-left: 52px;
+    color: #595757;
+}
+
+.index-lis {
+    background-color: #fbfbfb;
+    border-top: 1px solid #e5e5e5;
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 52px;
+    color: #333;
+    font-size: 0.9rem;
+}
