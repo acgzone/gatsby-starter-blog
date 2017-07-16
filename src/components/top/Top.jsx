@@ -27,9 +27,9 @@ const Top = ({ quickstart, clickQuickstart }) => {
           <span className="rTitle">学院案内</span>
           <span className="title">关于大成</span>
           <div className="dropdown-content">
-            <Link to="/aboutDc/">大成简介</Link>
-            <Link to="/aboutDc/about1/">团队介绍</Link>
-            <Link to="/aboutDc/about2/">教学环境</Link>
+            <Link to="/aboutDc">大成简介</Link>
+            <Link to="/aboutDc/about1">团队介绍</Link>
+            <Link to="/aboutDc/about2">教学环境</Link>
           </div>
         </li>
         <li>
