@@ -6,29 +6,29 @@ import { rhythm } from "../../utils/typography"
 
 import styles from "../../styles"
 import presets from "../../utils/presets"
-
+import './index.css'
 class Index extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
 
     return (
-      <div>
+      <div className="news">
         <Helmet title="最新资讯" />
-        <p>最新资讯</p>
+        <p className="news-title"><img src={require('./news.png')}/>&nbsp;&nbsp;&nbsp;最新资讯</p>
         <ul
             css={{
               marginBottom: rhythm(2),
-              marginTop: rhythm(2),
+              marginTop: rhythm(0),
               marginLeft: 0,
               listStyle: `none`,
             }}
           >
             {posts.map(post =>
               <li key={post.node.fields.slug}>
-                <Link to={post.node.fields.slug} className="link-underline">
-                  <img src={require('../' + post.node.frontmatter.cover.relativePath)} />
-                  <h1>{post.node.frontmatter.title}</h1>
-                  <p>{post.node.excerpt}</p>
+                <Link to={post.node.fields.slug}>
+                  <img className="news-img" src={require('../' + post.node.frontmatter.cover.relativePath)} />
+                  <h3 className="news-titles">{post.node.frontmatter.title}</h3>
+                  <p className="news-desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{post.node.excerpt}</p>
                 </Link>
               </li>
             )}
