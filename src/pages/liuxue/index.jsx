@@ -28,7 +28,7 @@ const Index = () => {
             <div className="liuxue-biaoti1">4、	学费：一年80万日元左右（5万RMB左右）</div>
             <div className="liuxue-biaoti1">5、	住宿费：宿舍一般较为便宜（1000RMB~3000RMB左右每月）</div>
             <div className="liuxue-biaoti1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;外面租住一般3000RMB左右每月（分地区）</div>
-            <div className="liuxue-biaoti1">日本允许留学生申请打工，对家庭负担较小。</div>
+            <div className="liuxue-biaoti1 liuxue-bottom">日本允许留学生申请打工，对家庭负担较小。</div>
         </div>
         <div className="liuxue" id="daxue">
             <img src={require('./Overseas_02.png')} className="liuxue-img"></img>
@@ -55,7 +55,7 @@ const Index = () => {
             <div className="liuxue-biaoti1">3、	学费：一年35万日元左右（2万RMB左右）</div>
             <div className="liuxue-biaoti1">4、	住宿费：宿舍一般较为便宜（1000RMB~3000RMB左右每月）</div>
             <div className="liuxue-biaoti1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;外面租住一般3000RMB左右每月（分地区）</div>
-            <div className="liuxue-biaoti1">日本允许留学生申请打工，对家庭负担较小。</div>
+            <div className="liuxue-biaoti1 liuxue-bottom">日本允许留学生申请打工，对家庭负担较小。</div>
         </div>
         <div className="liuxue" id="work">
             <img src={require('./Overseas_03.png')} className="liuxue-img"></img>
@@ -73,7 +73,7 @@ const Index = () => {
             <div className="liuxue-biaoti1">6、	亲属公证（证明跟经济支付人关系）；</div>
             <div className="liuxue-biaoti1">7、	存款证明；</div>
             <div className="liuxue-biaoti1">8、	一定数量的规定样式照片。</div>
-            <div className="liuxue-biaoti1">9、	护照复印件</div>
+            <div className="liuxue-biaoti1 liuxue-bottom">9、	护照复印件</div>
         </div>
         <div className="liuxue-u">
             <ul className="liuxue-ul">

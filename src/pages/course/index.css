@@ -77,6 +77,10 @@
     line-height: 2.5em;
 }
 
+.course-bottom {
+    margin-bottom: 50px;
+}
+
 .course-biaoti-zhu {
     font-size: 0.9rem;
     color: #ffb700;

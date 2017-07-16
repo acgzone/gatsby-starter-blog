@@ -23,7 +23,7 @@ const Index = () => {
             <div className="course-biaoti">适合对象</div>
             <div className="course-biaoti1">1、	对日语感兴趣的0基础同学</div>
             <div className="course-biaoti1">2、	一直徘徊在50音的日语爱好者</div>
-            <div className="course-biaoti1">3、	学习过一些日语却忘掉了的同学</div>
+            <div className="course-biaoti1 course-bottom">3、	学习过一些日语却忘掉了的同学</div>
         </div>
         <div className="course" id="rydj">
             <img src={require('./course_02.png')} className="course-img"></img>
@@ -48,7 +48,7 @@ const Index = () => {
             <div className="course-biaoti1">2、	希望独立完成日本旅行的同学（不借助翻译）</div>
             <div className="course-biaoti1">3、	希望赴日留学的同学</div>
             <div className="course-biaoti1">4、	希望进入日企工作的同学</div>
-            <div className="course-biaoti1">5、	其他对日语感兴趣的同学</div>
+            <div className="course-biaoti1 course-bottom">5、	其他对日语感兴趣的同学</div>
         </div>
         <div className="course" id="rylx">
             <img src={require('./course_03.png')} className="course-img"></img>
@@ -66,7 +66,7 @@ const Index = () => {
             <div className="course-biaoti1">3、	了解日本传统风俗文化</div>
             <div className="course-biaoti1">4、	掌握日本留学行前知识</div>
             <div className="course-biaoti">适合对象</div>
-            <div className="course-biaoti1">希望赴日留学的同学</div>
+            <div className="course-biaoti1 course-bottom">希望赴日留学的同学</div>
         </div>
         <div className="course" id="ky">
             <img src={require('./course_04.png')} className="course-img"></img>
@@ -80,7 +80,7 @@ const Index = () => {
             <div className="course-biaoti1">3、	提高已有的日语会话能力</div>
             <div className="course-biaoti">适合对象</div>
             <div className="course-biaoti1">1、	有一定日语基础（初级）的学员</div>
-            <div className="course-biaoti1">2、	希望短期提高日语口语能力的同学</div>
+            <div className="course-biaoti1 course-bottom">2、	希望短期提高日语口语能力的同学</div>
         </div>
         <div className="course" id="xq">
             <img src={require('./course_05.png')} className="course-img"></img>
@@ -94,7 +94,7 @@ const Index = () => {
             <div className="course-biaoti1">3、	不属于系统性日语学习课程</div>
             <div className="course-biaoti">适合对象</div>
             <div className="course-biaoti1">对日本文化感兴趣的同学</div>
-            <div className="course-biaoti-zhu">注：本课程开班不固定、不属于严肃的学习课程，慎报。</div>
+            <div className="course-biaoti-zhu course-bottom">注：本课程开班不固定、不属于严肃的学习课程，慎报。</div>
         </div>
         <div className="course" id="ly">
             <img src={require('./course_06.png')} className="course-img"></img>
@@ -111,7 +111,7 @@ const Index = () => {
             <div className="course-biaoti1">2、	了解日本各地风土人情</div>
             <div className="course-biaoti1">3、	掌握出行安全知识</div>
             <div className="course-biaoti">适合对象</div>
-            <div className="course-biaoti1">希望赴日旅行的同学</div>
+            <div className="course-biaoti1 course-bottom">希望赴日旅行的同学</div>
         </div>
         <div className="course" id="se">
           <img src={require('./course_07.png')} className="course-img"></img>
@@ -123,7 +123,7 @@ const Index = () => {
             <div className="course-biaoti1">2、	掌握50音图</div>
             <div className="course-biaoti1">3、	掌握简单的日常用语</div>
             <div className="course-biaoti">适合对象</div>
-            <div className="course-biaoti1">对日语、日本文化感兴趣的家长and孩子</div>
+            <div className="course-biaoti1 course-bottom">对日语、日本文化感兴趣的家长and孩子</div>
         </div>
         <div className="course" id="tbdz">
           <img src={require('./course_08.png')} className="course-img"></img>
@@ -136,7 +136,7 @@ const Index = () => {
             <div className="course-biaoti1">2、	每周安排一次课程</div>
             <div className="course-biaoti">适合对象</div>
             <div className="course-biaoti1">1、	时间不太固定的同学</div>
-            <div className="course-biaoti1">2、	希望按照自己的要求学习的同学</div>
+            <div className="course-biaoti1 course-bottom">2、	希望按照自己的要求学习的同学</div>
         </div>
     </div>
     <div className="course-u">
