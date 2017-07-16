@@ -1,28 +1,36 @@
 import Link from "gatsby-link"
 
 const News = ({ posts }) => {
+  console.log("posts",posts)
   return (
     <div id="news">
       <div className="title1">
-        <text>最新资讯</text>
-        <text className="more1">11</text>
-        <text className="more">更多</text>
+        <div className="title-dc-dc">
+          <span className="title-dc">最新资讯</span>
+          <span className="title-dc1">最新情報</span>
+        </div>
+        <span className="more1">..................</span>
+        <div className="title-more">
+          <Link to="/news">
+            <span className="more">更多</span>
+            <span className="more-r">もっと</span>
+          </Link>
+        </div>
       </div>
-      {posts.map(post =>
-        <Link to={post.node.fields.slug}>
-          <div key={post.node.fields.slug}
-            css={{
-              display: 'inline-block',
-            }}
-          >
-            <img src={require('./1.png')}
-              css ={{
-                width: 400,
-              }}></img>
-            <div>{post.node.frontmatter.title}</div>
-          </div>
-        </Link>
-      )}
+      <div className="title-new">
+        {posts.map(post =>
+          <Link to={post.node.fields.slug}>
+            <div key={post.node.fields.slug}
+              css={{
+                display: 'inline-block',
+              }}
+            >
+              <img src={require('./1.png')} className="news-img"></img>
+              <div>{post.node.frontmatter.title}</div>
+            </div>
+          </Link>
+        )}
+      </div>
     </div>
   );
 };
