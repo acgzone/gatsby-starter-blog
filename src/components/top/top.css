@@ -50,7 +50,7 @@ header {
     text-align: center;
 }
 
-.nav li ::before {
+.nav li:before {
     content: "";
     display: block;
     width: 1px;
@@ -62,7 +62,7 @@ header {
     margin-top: -12px;
 }
 
-.nav .noslash ::before {
+.nav .noslash:before {
     display: none;
 }
 
