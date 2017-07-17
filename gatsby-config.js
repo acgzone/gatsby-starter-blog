@@ -18,6 +18,7 @@ module.exports = {
           {
             resolve: `magicly-remark-target-new`,
           },
+          `gatsby-remark-autolink-headers`,
         ],
       },
     },
