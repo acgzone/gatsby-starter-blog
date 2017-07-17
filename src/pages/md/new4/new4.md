@@ -1,10 +1,10 @@
 ---
-title: 这是第4篇新闻
+title: 初次见面，请多关照！ 大成君から
 draft: false
 tags: [rnn, neural network, dl, ml]
 category: ML
-date: "2017-04-10T15:42:58Z"
+date: "2017-05-19T15:42:58Z"
 cover: "cover4.png"
 ---
 
-<iframe style="width: 100%; height: 5000px;border: none;" src="https://mp.weixin.qq.com/s?__biz=MjM5ODk3MTI3MQ==&mid=2653840215&idx=1&sn=d309efcbd5683f9db9cfb3b922b4cdf9&chksm=bd1851bf8a6fd8a94b9b4c07e56fc9a60fe018ffe57860efffc6ea367e3a156058af00c47b21&scene=0#rd" />
+<iframe style="width: 100%; height: 5000px;border: none;" src="https://mp.weixin.qq.com/s?__biz=MzIxOTU3MzE0Nw==&mid=100000002&idx=1&sn=cf5106720f37a07084477f5c54eefdc0&chksm=17d87ff620aff6e0aedd75c00a1798fd8a59b32cb8e4ad93448ab29236598c7d297268428bde&mpshare=1&scene=1&srcid=0716yshonwsm3yTSVC4Ljy1M#rd" />
