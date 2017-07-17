@@ -22,11 +22,11 @@ class Index extends React.Component {
             let path = `${post.node.frontmatter.cover.relativePath}`;
             path = path.slice(0, path.lastIndexOf('.'))
             return <li key={post.node.fields.slug}>
-              <Link to={post.node.fields.slug}>
+              <a href={post.node.frontmatter.link} target="_blank">
                 <img className="news-img" src={require('../' + path + '.png')} />
                 <h3 className="news-titles">{post.node.frontmatter.title}</h3>
                 <p className="news-desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{post.node.excerpt}</p>
-              </Link>
+              </a>
             </li>
           }
           )}
@@ -58,6 +58,7 @@ query NewsQuery {
             relativePath
             base
           }
+          link
         }
       }
     }
