@@ -28,6 +28,11 @@ query IndexQuery2 {
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD")
+          cover {
+            relativePath
+            base
+          }
+          link
         }
       }
     }

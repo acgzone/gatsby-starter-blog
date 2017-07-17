@@ -20,7 +20,7 @@ const News = ({ posts }) => {
       <div className="title-new">
         {posts.map(post =>
         
-          <Link to={post.node.fields.slug}>
+          <a href={post.node.frontmatter.link} target="_blank">
             <div key={post.node.fields.slug}
               css={{
                 display: 'inline-block',
@@ -29,7 +29,7 @@ const News = ({ posts }) => {
               <img src={require('./15news_01.png')} className="news-imgs"></img>
               <div>{post.node.frontmatter.title}</div>
             </div>
-          </Link>
+          </a>
         )}
       </div>
     </div>
