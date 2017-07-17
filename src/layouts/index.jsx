@@ -18,11 +18,11 @@ class DefaultLayout extends React.Component {
   }
   componentWillReceiveProps(nextProps) {
     // console.log('componentWillReceiveProps:', this.props.location.pathname, nextProps.location.pathname)
-    if (this.props.location.pathname !== nextProps.location.pathname) {
+    // if (this.props.location.pathname !== nextProps.location.pathname) {
       this.setState({
         quickstart: false,
       })
-    }
+    // }
   }
   render() {
     const body = this.state.quickstart ?
