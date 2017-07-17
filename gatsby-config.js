@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Magicly's Blog",
+    title: "大成日语",
     author: "Magicly",
   },
   plugins: [
@@ -30,5 +30,4 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-glamor`,
   ],
-  pathPrefix: 'http://localhost:5000'
 }
