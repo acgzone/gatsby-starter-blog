@@ -10,6 +10,12 @@ import "slick-carousel/slick/slick-theme.css";
 import './banner.css'
 
 class Demo extends React.Component {
+    componentDidMount() {
+        setTimeout(() =>
+            // this.slider.slickNext(),
+            this.slider.slickPrev(),
+            100);
+    }
     render() {
         const settings = {
             // accessibility: true,
@@ -24,7 +30,7 @@ class Demo extends React.Component {
             centerMode: true,
             className: "center",
             variableWidth: true,
-            initialSlide: 3,
+            initialSlide: 0,
             beforeChange: function (currentSlide, nextSlide) {
                 // console.log('before change', currentSlide, nextSlide);
             },
@@ -33,7 +39,7 @@ class Demo extends React.Component {
             },
         };
         return (
-            <Slider {...settings} >
+            <Slider ref={c => this.slider = c} {...settings}>
                 <li className="slick-item"><Link to='/'><img src={require("./banner1.png")} /></Link></li>
                 <li className="slick-item"><Link to='/'><img src={require("./banner2.png")} /></Link></li>
                 <li className="slick-item"><Link to='/'><img src={require("./banner3.png")} /></Link></li>
