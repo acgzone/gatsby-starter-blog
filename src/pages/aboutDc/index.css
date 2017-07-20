@@ -2,15 +2,16 @@
     border-bottom: 1px solid #f9f9f9;
     background: #ebece7;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100%;
     height: 30px;
 }
 
 .about-daohang1 {
     color: #666;
-    max-width: 1200px;
     float: left;
     font-size: 0.7rem;
+    margin-left: 9.5%;
+    margin-top: 5px;
 }
 
 .about-daohang2 {
@@ -22,44 +23,59 @@
 }
 
 .abouts {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     position: relative;
 }
 
 .about {
-    width: 850px;
+    width: 85%;
+    text-align: left;
 }
 
 .about-img {
-    width: 850px;
+    width: 100%;
 }
 
 .about-title {
     padding: 0px 0;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.xiangshang {
+    position: relative;
+    margin-top: 30px;
 }
 
 .about-neirong {
     color: #5f5f5f;
-    line-height: 2.8em;
+    line-height: 2em;
     font-size: 0.9rem;
     text-align: left;
     display: inline-block;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 .about-ls {
-    width: 850px;
+    width: 85%;
     position: relative;
     text-align: left;
     margin-bottom: 30px;
+    min-width: 800px;
 }
 
 .about-ls-l {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.about-img-xs {
+    position: absolute;
+    bottom: 35px;
+    left: 49%
 }
 
 .about-ls-r {
@@ -73,14 +89,15 @@
     margin-top: 28px;
     margin-right: 28px;
     display: inline-block;
-    width: 180px;
-    height: 200px;
+    width: 15%;
+    height: 18%;
     vertical-align: top;
+    margin-bottom: 28px;
 }
 
 .about-ls-js {
     display: inline-block;
-    width: 580px;
+    width: 68%;
     margin-top: 28px;
     text-align: left;
 }
@@ -96,6 +113,7 @@
     text-align: left;
     font-size: 0.9rem;
     margin-top: 15px;
+    line-height: 35px;
 }
 
 .about-u {
