@@ -10,8 +10,7 @@ const Top = ({ quickstart, clickQuickstart }) => {
       <img src={require(quickstart ? "./close.png" : "./btn01.png")} className="bar" onClick={clickQuickstart}></img>
       <img
         css={{
-          width: "77px",
-          height: "70px",
+          marginTop: 8,
         }}
         src={require("./logo.png")}></img>
     </div>
