@@ -58,6 +58,7 @@ query NewsQuery {
             relativePath
             base
           }
+          img
           link
         }
       }

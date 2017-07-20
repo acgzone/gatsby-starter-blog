@@ -32,6 +32,7 @@ query IndexQuery2 {
             relativePath
             base
           }
+          img
           link
         }
       }
