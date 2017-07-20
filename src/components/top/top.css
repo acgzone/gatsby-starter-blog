@@ -23,7 +23,7 @@ header {
     height: 70px;
     margin: 0 auto;
     position: relative;
-    max-width: 1200px;
+    max-width: 80%;
 }
 
 .bar {
@@ -40,7 +40,7 @@ header {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     position: relative;
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
