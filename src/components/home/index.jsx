@@ -28,7 +28,7 @@ class Index extends React.Component {
     const scrollTop = this.getScrollTop();
     // console.log('scroll...', scrollTop)
     // todo 缩放比例会影响这个值， 应该也要“自适应”屏幕大小
-    if (scrollTop > 500) {
+    if (scrollTop > 440) {
       this.setState({
         showSideBar: true,
       })
