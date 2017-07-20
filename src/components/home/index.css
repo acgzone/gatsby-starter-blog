@@ -83,8 +83,10 @@
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 0.7rem;
-    background-color: rgba(30, 30, 30, 0.58)
+    font-size: 0.96rem;
+    background-color: rgba(30, 30, 30, 0.58);
+    padding-top: 6px;
+    padding-bottom: 6px
 }
 
 .index-tp-tp {

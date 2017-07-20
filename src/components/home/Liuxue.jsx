@@ -18,19 +18,19 @@ const Liuxue = () => {
       <div className="index-tp">
         <div className="index-mc">
           <Link to="/liuxue#gaozhong">
-            <img src={require('./1.png')} className="index-tp-tp"></img>
+            <img src={require('./12study_01.png')} className="index-tp-tp"></img>
             <div className="index-tp-ms">高中生留学</div>
           </Link>
         </div>
         <div className="index-mc">
           <Link to="/liuxue#daxue">
-            <img src={require('./2.png')} className="index-tp-tp"></img>
+            <img src={require('./13study_02 .png')} className="index-tp-tp"></img>
             <div className="index-tp-ms">大学生留学</div>
           </Link>
         </div>
         <div className="index-mc">
           <Link to="/liuxue#work">
-            <img src={require('./3.png')} className="index-tp-tp"></img>
+            <img src={require('./14study_03.png')} className="index-tp-tp"></img>
             <div className="index-tp-ms">工作后留学</div>
           </Link>
         </div>
