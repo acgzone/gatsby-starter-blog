@@ -1,7 +1,6 @@
 import Link from "gatsby-link"
 
 const News = ({ posts }) => {
-  console.log("posts",posts)
   return (
     <div id="news">
       <div className="title1">
@@ -19,8 +18,6 @@ const News = ({ posts }) => {
       </div>
       <div className="title-new">
         {posts.map(post =>{
-        console.log("adasda",posts)
-
           return <a href={post.node.frontmatter.link} target="_blank">
             <div key={post.node.fields.slug}
               css={{
