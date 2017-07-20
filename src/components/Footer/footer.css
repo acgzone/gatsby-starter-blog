@@ -13,7 +13,7 @@ div {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: 100% 700px;
 }
 
 .content {
