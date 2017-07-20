@@ -4,8 +4,8 @@ const Liuxue = () => {
     <div id="liuxue">
       <div className="title1">
         <div className="title-dc-dc">
-          <span className="title-dc">留学日本</span>
-          <span className="title-dc1">留学日本</span>
+          <span className="title-dc">&nbsp;留学日本</span>
+          <span className="title-dc1">&nbsp;留学日本</span>
         </div>
         <span className="more1">..................</span>
         <div className="title-more">
