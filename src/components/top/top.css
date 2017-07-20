@@ -101,13 +101,14 @@ li:hover .dropdown-content {
 
 .title {
     display: block;
-    color: #595757;
-    font-size: 0.9rem;
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 5px;
 }
 
 .rTitle {
-    height: 25px;
     display: block;
     color: #999;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    margin-top: 5px;
 }
