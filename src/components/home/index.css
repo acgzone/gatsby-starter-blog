@@ -2,7 +2,7 @@
     display: flex;
     text-align: center;
     width: 100%;
-    max-width: 850px;
+    max-width: 71%;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@
 
 .title-new {
     width: 100%;
-    max-width: 850px;
+    max-width: 71%;
     margin: 0 auto;
 }
 
@@ -56,15 +56,14 @@
 }
 
 .index-tp {
-    max-width: 850px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
 .index-mc {
     display: inline-block;
     position: relative;
-    width: 273px;
-    height: 186px;
+    width: 28%;
     margin: 5px;
 }
 
@@ -80,7 +79,7 @@
 .index-tp-ms {
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     width: 100%;
     text-align: center;
     font-size: 0.96rem;
@@ -90,8 +89,7 @@
 }
 
 .index-tp-tp {
-    width: 273px;
-    height: 186px;
+    width: 100%
 }
 
 #course {
@@ -108,6 +106,15 @@
 
 #news div img {
     margin: 5px;
+    width: 100%;
+}
+
+.news-img-img {
+    width: 48%;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+    min-width: 262px;
 }
 
 .index-u {
