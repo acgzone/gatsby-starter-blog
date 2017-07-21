@@ -1,7 +1,6 @@
 .aboutus {
     width: 80%;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 .aboutus-lxwm {
@@ -22,6 +21,11 @@
     position: absolute;
     bottom: 0px;
     left: 180px;
+}
+
+.aboutus-img {
+    width: 100%;
+    margin-bottom: 0;
 }
 
 .aboutus-nr {

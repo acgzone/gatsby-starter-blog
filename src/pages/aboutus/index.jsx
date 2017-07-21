@@ -5,7 +5,7 @@ import './index.css'
 const Index = () => {
   return (
     <div className="aboutus">
-        <img src={require('./dacheng.png')}></img>
+        <img className="aboutus-img" src={require('./dacheng.png')}></img>
 				<div className="aboutus-lxwm">
 					<img src={require('./contact.png')} className="aboutus-tx"/>
 					<text>联系我们</text>
