@@ -2,15 +2,16 @@
     border-bottom: 1px solid #f9f9f9;
     background: #ebece7;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100%;
     height: 30px;
 }
 
 .course-daohang1 {
     color: #666;
-    max-width: 1200px;
     float: left;
     font-size: 0.7rem;
+    margin-left: 9.5%;
+    margin-top: 5px;
 }
 
 .course-daohang2 {
@@ -22,22 +23,22 @@
 }
 
 .courses {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     position: relative;
 }
 
 .course {
-    width: 850px;
+    width: 85%;
 }
 
 .course-img {
-    width: 850px;
+    width: 100%;
 }
 
 .course-title {
     padding: 0px 0;
-    width: 850px;
+    width: 100%;
     border-bottom: 1px solid #e5e5e5;
     text-align: left;
 }
