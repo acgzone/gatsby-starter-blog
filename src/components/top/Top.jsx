@@ -4,7 +4,50 @@ import Link from "gatsby-link"
 // Import typefaces
 import './top.css'
 
-const Top = ({ quickstart, clickQuickstart }) => {
+class Top extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      showSideBar: false,
+      oldTop:0
+    }
+    this.handleScroll = this.handleScroll.bind(this);// 直接把this.handleScroll.bind(this);写在addEventListener和removeEventListener里面的话，会导致两次bind(this)的不是同一个函数，会remove不掉，存在内存泄露
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    console.log('componentWillUnmount: remove handleScroll')
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+  handleScroll(e) {
+    const scrollTop = this.getScrollTop();
+    // console.log('scroll...', scrollTop)
+    // todo 缩放比例会影响这个值， 应该也要“自适应”屏幕大小
+    if (scrollTop -this.state.oldTop>0) {
+      this.setState({
+        oldTop:scrollTop,
+        showSideBar: true,
+      })
+    } else {
+      this.setState({
+        oldTop:scrollTop,
+        showSideBar: false,
+      })
+    }
+  }
+  getScrollTop() {
+    var scrollTop = 0;
+    if (document.documentElement && document.documentElement.scrollTop) {
+      scrollTop = document.documentElement.scrollTop;
+    }
+    else if (document.body) {
+      scrollTop = document.body.scrollTop;
+    }
+    return scrollTop;
+  }
+render(){
+  const { quickstart, clickQuickstart } = this.props;
   return <header>
     <div className="logo">
       <img src={require(quickstart ? "./close.png" : "./btn01.png")} className="bar" onClick={clickQuickstart}></img>
@@ -14,8 +57,17 @@ const Top = ({ quickstart, clickQuickstart }) => {
         }}
         src={require("./logo.png")}></img>
     </div>
-    <div className="nav">
-      <ul>
+    <div 
+      css={{
+        maxHeight: this.state.showSideBar ?  0 : 50,
+        borderTop: this.state.showSideBar ?"none":"1px solid #e5e5e5",
+    borderBottom: this.state.showSideBar ?"none":"1px solid #e5e5e5",
+      }}
+      className="nav">
+      <ul
+      css={{
+            display: this.state.showSideBar ?  "none" : "block",
+      }}>
         <li className="noslash">
           <Link to="/">
             <span className="rTitle">ホーム</span>
@@ -71,6 +123,7 @@ const Top = ({ quickstart, clickQuickstart }) => {
       </ul>
     </div>
   </header>
+}
 }
 
 export default Top;
