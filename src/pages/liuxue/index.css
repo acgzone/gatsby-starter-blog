@@ -2,15 +2,16 @@
     border-bottom: 1px solid #f9f9f9;
     background: #ebece7;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100%;
     height: 30px;
 }
 
 .liuxue-daohang1 {
     color: #666;
-    max-width: 1200px;
     float: left;
     font-size: 0.7rem;
+    margin-left: 9.5%;
+    margin-top: 5px;
 }
 
 .liuxue-daohang2 {
@@ -22,17 +23,17 @@
 }
 
 .liuxues {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     position: relative;
 }
 
 .liuxue {
-    width: 850px;
+    width: 85%;
 }
 
 .liuxue-img {
-    width: 850px;
+    width: 100%;
 }
 
 .liuxue-h3 {
@@ -42,7 +43,7 @@
 
 .liuxue-title {
     padding: 0px 0;
-    width: 850px;
+    width: 100%;
     border-bottom: 1px solid #e5e5e5;
     text-align: left;
 }
@@ -59,7 +60,7 @@
     font-size: 1.2rem;
     color: #ffb700;
     margin-left: 10px;
-    width: 850px;
+    width: 100%;
     text-align: left;
     line-height: 2.5em;
 }
@@ -68,7 +69,7 @@
     font-size: 1.2rem;
     color: #595757;
     margin-left: 10px;
-    width: 850px;
+    width: 100%;
     text-align: left;
     line-height: 2.5em;
 }
@@ -77,7 +78,7 @@
     font-size: 0.9rem;
     color: #333;
     margin-left: 10px;
-    width: 850px;
+    width: 100%;
     text-align: left;
     line-height: 2.5em;
 }
@@ -90,7 +91,7 @@
     font-size: 0.9rem;
     color: #ffb700;
     margin-left: 10px;
-    width: 850px;
+    width: 100%;
     text-align: left;
     line-height: 2.5em;
 }
