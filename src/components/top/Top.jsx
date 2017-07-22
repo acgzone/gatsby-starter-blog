@@ -61,7 +61,6 @@ render(){
       css={{
         maxHeight: this.state.showSideBar ?  0 : 50,
         borderTop: this.state.showSideBar ?"none":"1px solid #e5e5e5",
-    borderBottom: this.state.showSideBar ?"none":"1px solid #e5e5e5",
       }}
       className="nav">
       <ul
