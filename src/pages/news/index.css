@@ -9,12 +9,17 @@
     border-bottom: 1px solid #e5e5e5;
     color: #666;
     font-size: 0.7rem;
-    margin-top: 10px;
+    margin: 10px 0;
+    padding-bottom: 6px;
 }
 
 .news-img {
     width: 100%;
     margin-bottom: 0;
+}
+
+.news-images {
+    vertical-align: middle;
 }
 
 .news-titles {

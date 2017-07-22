@@ -9,7 +9,7 @@ class Index extends React.Component {
     return (
       <div className="news">
         <Helmet title="最新资讯" />
-        <p className="news-title"><img src={require('./news.png')} />&nbsp;&nbsp;&nbsp;最新资讯</p>
+        <p className="news-title"><img src={require('./news.png')} className="news-images"/>&nbsp;&nbsp;&nbsp;<span>最新资讯</span></p>
         <ul
           css={{
             marginBottom: "30px",
