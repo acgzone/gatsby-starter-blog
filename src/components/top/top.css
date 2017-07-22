@@ -70,6 +70,25 @@ header {
     margin-top: -12px;
 }
 
+li:after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #595757;
+    transition: .5s;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+li:hover:after {
+    width: 70%
+}
+
 .nav .noslash:before {
     display: none;
 }
