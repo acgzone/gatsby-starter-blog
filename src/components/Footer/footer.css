@@ -37,21 +37,51 @@ div {
     /*padding-bottom: 20px;*/
 }
 
+.footer-lxwm {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-lxwm1 {
+    font-size: 14px;
+    color: #666;
+}
+
 .contact {
     max-width: 80%;
     margin: 0 auto;
     border-bottom: 1px solid #e5e5e5;
-    padding: 2em 0;
+    padding-bottom: 2rem;
 }
 
 .text {
-    font-size: 0.7rem;
+    font-size: 14px;
     color: #666;
 }
 
-.copyright {
-    font-size: 0.5rem;
+.footer-lx {
+    display: inline-block;
+    font-size: 14px;
     color: #666;
-    padding: 2em 0;
+}
+
+.footer-lx1 {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-left: 32px;
+}
+
+.footer-dz {
+    text-align: left;
+    width: 280px;
+}
+
+.copyright {
+    font-size: 10px;
+    color: #666;
+    padding: 1em 0;
     line-height: 2em;
 }
