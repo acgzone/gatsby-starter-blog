@@ -70,7 +70,7 @@ header {
     margin-top: -12px;
 }
 
-li:after {
+.lis:after {
     content: "";
     position: absolute;
     bottom: 1px;
@@ -85,7 +85,7 @@ li:after {
     transform: translateX(-50%);
 }
 
-li:hover:after {
+.lis:hover:after {
     width: 70%
 }
 

@@ -68,13 +68,13 @@ render(){
       css={{
             display: this.state.showSideBar ?  "none" : "block",
       }}>
-        <li className="noslash">
+        <li className="noslash lis">
           <Link to="/">
             <span className="rTitle">ホーム</span>
             <span className="title">首页</span>
           </Link>
         </li>
-        <li>
+        <li className="lis">
           <span className="rTitle">学院案内</span>
           <span className="title">关于大成</span>
           <div className="dropdown-content">
@@ -83,7 +83,7 @@ render(){
             <Link to="/aboutDc/about2">教学环境</Link>
           </div>
         </li>
-        <li>
+        <li className="lis">
           <span className="rTitle">コース紹介</span>
           <span className="title">日语课程</span>
           <div className="dropdown-content">
@@ -97,7 +97,7 @@ render(){
             <Link to="/course#tbdz">特别定制课程</Link>
           </div>
         </li>
-        <li>
+        <li className="lis">
           <span className="rTitle">日本留学</span>
           <span className="title">日本留学</span>
           <div className="dropdown-content">
@@ -106,7 +106,7 @@ render(){
             <Link to="/liuxue#work">工作后留学</Link>
           </div>
         </li>
-        <li>
+        <li className="lis">
           <Link to="/news">
             <div className="Title">
               <span className="rTitle">最新情報</span>
@@ -114,7 +114,7 @@ render(){
             </div>
           </Link>
         </li>
-        <li>
+        <li className="lis">
           <Link to="/aboutus">
             <span className="rTitle">コンタクト</span>
             <span className="title">联系我们</span>
