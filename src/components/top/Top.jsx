@@ -117,7 +117,7 @@ render(){
         <li>
           <Link to="/aboutus">
             <span className="rTitle">コンタクト</span>
-            <span className="title">关于我们</span>
+            <span className="title">联系我们</span>
           </Link>
         </li>
       </ul>
