@@ -40,11 +40,11 @@ class Demo extends React.Component {
         };
         return (
             <Slider ref={c => this.slider = c} {...settings}>
-                <li className="slick-item"><Link to='/'><img src={require("./banner1.png")} /></Link></li>
-                <li className="slick-item"><Link to='/'><img src={require("./banner2.png")} /></Link></li>
-                <li className="slick-item"><Link to='/'><img src={require("./banner3.png")} /></Link></li>
-                <li className="slick-item"><Link to='/'><img src={require("./banner4.png")} /></Link></li>
-                <li className="slick-item"><Link to='/'><img src={require("./banner5.png")} /></Link></li>
+                <li className="slick-item"><Link to='/liuxue#gaozhong'><img src={require("./banner1.png")} /></Link></li>
+                <li className="slick-item"><Link to='/news'><img src={require("./banner2.png")} /></Link></li>
+                <li className="slick-item"><Link to='/course#ly'><img src={require("./banner3.png")} /></Link></li>
+                <li className="slick-item"><Link to='/course#ryrm'><img src={require("./banner4.png")} /></Link></li>
+                <li className="slick-item"><Link to='/aboutDc/about1'><img src={require("./banner5.png")} /></Link></li>
             </Slider>
         );
     }
