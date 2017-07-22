@@ -5,6 +5,7 @@ import './index.css'
 const Index = () => {
   return (
 <div>
+    <Helmet title="日语课程" />
     <div className="course-daohang">
         <div className="course-daohang1">
             <img src={require('./course.png')} className="course-daohang2"></img><span>首页</span> &gt;<span>日语课程</span>

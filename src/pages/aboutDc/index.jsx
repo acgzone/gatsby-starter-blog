@@ -8,9 +8,10 @@ class Index extends React.Component {
 
     return (
       <div>
+        <Helmet title="大成简介" />
         <div className="about-daohang">
             <div className="about-daohang1">
-                <img src={require('./about us.png')} className="about-daohang2"></img><span>首页</span> &gt;<span>大成介绍</span>
+                <img src={require('./about us.png')} className="about-daohang2"></img><span>首页</span> &gt;<span>大成简介</span>
             </div>
         </div>
         <div className="abouts">

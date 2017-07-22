@@ -5,9 +5,10 @@ import './index.css'
 const Index = () => {
   return (
     <div className="liuxues">
+        <Helmet title="日本留学" />
         <div className="liuxue-daohang">
             <div className="liuxue-daohang1">
-                <img src={require('./liuxue.png')} className="liuxue-daohang2"></img><span>首页</span> &gt;<span>日语课程</span>
+                <img src={require('./liuxue.png')} className="liuxue-daohang2"></img><span>首页</span> &gt;<span>日本留学</span>
             </div>
         </div>
         <div className="liuxue" id="gaozhong">

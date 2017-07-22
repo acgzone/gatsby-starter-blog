@@ -8,6 +8,7 @@ class About2 extends React.Component {
 
     return (
       <div>
+        <Helmet title="教学环境" />
         <div className="about-daohang">
             <div className="about-daohang1">
                 <img src={require('./about us.png')} className="about-daohang2"></img><span>首页</span> &gt;<span>教学环境</span>
