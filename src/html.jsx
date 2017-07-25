@@ -40,11 +40,7 @@ module.exports = React.createClass({
           {head.link.toComponent()}
           {head.script.toComponent()}
         </head>
-        <body
-          css={{
-            fontFamily : "Microsoft YaHei"
-          }}
-        >
+        <body>
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
