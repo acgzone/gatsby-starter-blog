@@ -119,12 +119,11 @@
 
 .index-u {
     position: fixed;
-    width: 180px;
+    width: 190px;
     right: 100px;
     top: 150px;
     z-index: 4;
     border: 1px solid #e5e5e5;
-    text-align: left;
 }
 
 .index-ul {
@@ -132,23 +131,45 @@
     margin: 0;
 }
 
+.index-u-flex1 {
+    font-size: 0.7rem;
+    color: #999;
+    padding-top: 3px;
+    margin-left: 50px;
+}
+
+.index-u-flex {
+    font-size: 0.7rem;
+    color: #999;
+    padding-top: 3px;
+    margin-left: 22px;
+}
+
 .index-li {
     background-color: #e8e8e8;
     margin: 0;
-    padding: 10px 0;
+    padding: 10px;
     font-size: 0.9rem;
-    padding-left: 42px;
     color: #595757;
+    justify-content: flex-start;
+    display: flex;
 }
 
 .index-lis {
     background-color: #fbfbfb;
     border-top: 1px solid #e5e5e5;
     margin: 0;
-    padding: 10px 0;
-    padding-left: 42px;
+    padding: 10px;
     color: #333;
     font-size: 0.9rem;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.index-lis-img {
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
 }
 
 .title-new-tilte {

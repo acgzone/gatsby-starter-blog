@@ -59,12 +59,12 @@ class Index extends React.Component {
           {this.state.showSideBar ?
             <div className="index-u">
               <ul className="index-ul">
-                  <li className="index-li"><img src={require('./index.png')}/>&nbsp;&nbsp;首页</li>
-                  <Link to="/aboutDc"><li className="index-lis"><img src={require('./about-us.png')}/>&nbsp;&nbsp;关于大成</li></Link>
-                  <Link to="/course"><li className="index-lis"><img src={require('./course.png')}/>&nbsp;&nbsp;日语课程</li></Link>
-                  <Link to="/liuxue"><li className="index-lis"><img src={require('./oversea.png')}/>&nbsp;&nbsp;日本留学</li></Link>
-                  <Link to="/news"><li className="index-lis"><img src={require('./news.png')}/>&nbsp;&nbsp;最新资讯</li></Link>
-                  <Link to="/aboutus"><li className="index-lis"><img src={require('./contact.png')}/>&nbsp;&nbsp;关于我们</li></Link>
+                  <li className="index-li"><span><img className="index-lis-img" src={require('./index.png')}/><span>&nbsp;&nbsp;首页</span></span><span className="index-u-flex1">ホーム</span></li>
+                  <Link to="/aboutDc"><li className="index-lis"><span><img className="index-lis-img" src={require('./about-us.png')}/><span>&nbsp;&nbsp;关于大成</span></span><span className="index-u-flex">学院案内</span></li></Link>
+                  <Link to="/course"><li className="index-lis"><span><img className="index-lis-img" src={require('./course.png')}/><span>&nbsp;&nbsp;日语课程</span></span><span className="index-u-flex">コース紹介</span></li></Link>
+                  <Link to="/liuxue"><li className="index-lis"><span><img className="index-lis-img" src={require('./oversea.png')}/><span>&nbsp;&nbsp;日本留学</span></span><span className="index-u-flex">日本留学</span></li></Link>
+                  <Link to="/news"><li className="index-lis"><span><img className="index-lis-img" src={require('./news.png')}/><span>&nbsp;&nbsp;最新资讯</span></span><span className="index-u-flex">最新情報</span></li></Link>
+                  <Link to="/aboutus"><li className="index-lis"><span><img className="index-lis-img" src={require('./contact.png')}/><span>&nbsp;&nbsp;关于我们</span></span><span className="index-u-flex">コンタクト</span></li></Link>
               </ul>
           </div>
             : ''}
