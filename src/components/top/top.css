@@ -20,10 +20,10 @@ header {
 }
 
 .logo {
-    height: 70px;
     margin: 0 auto;
     position: relative;
     max-width: 80%;
+    transition: 0.5s;
 }
 
 .bar {
@@ -32,8 +32,9 @@ header {
     top: 15px;
 }
 
-.logo img {
+.bar-img {
     text-align: center;
+    transition: 0.5s;
 }
 
 .nav {
@@ -124,7 +125,7 @@ li:hover .dropdown-content {
 
 .title {
     display: block;
-    color: #000;
+    color: #595757;
     font-size: 1rem;
     margin-bottom: 5px;
 }
