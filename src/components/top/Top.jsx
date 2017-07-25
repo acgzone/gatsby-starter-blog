@@ -62,10 +62,10 @@ render(){
         }}
         src={require("./logo.png")} className="bar-img"></img>
     </div>
+    <div className="logo-border"/>
     <div 
       css={{
         maxHeight: this.state.showSideBar ?  0 : 50,
-        borderTop: this.state.showSideBar ?"none":"1px solid #e5e5e5",
       }}
       className="nav">
       <ul
