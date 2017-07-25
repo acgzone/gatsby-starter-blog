@@ -40,8 +40,21 @@
 .course-title {
     padding: 0px 0;
     width: 100%;
-    border-bottom: 1px solid #e5e5e5;
     text-align: left;
+    margin: 0;
+}
+
+.course-title-xs {
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    height: 60px;
+    line-height: 60px;
+}
+
+.course-title-xss {
+    position: absolute;
+    bottom: 0px;
+    left: 12px;
 }
 
 .course-neirong {
@@ -53,9 +66,9 @@
 }
 
 .course-xin {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #ffb700;
-    margin-left: 10px;
+    margin-left: 30px;
     width: 850px;
     text-align: left;
     line-height: 2.5em;
@@ -64,7 +77,7 @@
 .course-biaoti {
     font-size: 1.2rem;
     color: #595757;
-    margin-left: 10px;
+    margin-left: 30px;
     width: 850px;
     text-align: left;
     line-height: 2.5em;
@@ -73,7 +86,7 @@
 .course-biaoti1 {
     font-size: 0.9rem;
     color: #333;
-    margin-left: 10px;
+    margin-left: 30px;
     width: 850px;
     text-align: left;
     line-height: 2.5em;
@@ -86,7 +99,7 @@
 .course-biaoti-zhu {
     font-size: 0.9rem;
     color: #ffb700;
-    margin-left: 10px;
+    margin-left: 30px;
     width: 850px;
     text-align: left;
     line-height: 2.5em;

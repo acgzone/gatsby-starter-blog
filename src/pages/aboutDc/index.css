@@ -57,6 +57,7 @@
     text-align: left;
     display: inline-block;
     margin-bottom: 10px;
+    text-indent: 30px;
 }
 
 .about-ls {
@@ -115,6 +116,7 @@
     font-size: 0.9rem;
     margin-top: 15px;
     line-height: 35px;
+    text-indent: 28px;
 }
 
 .about-u {

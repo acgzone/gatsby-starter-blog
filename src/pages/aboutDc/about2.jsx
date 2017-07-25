@@ -18,8 +18,7 @@ class About2 extends React.Component {
           <div className="about">
               <img src={require('./33envi_01.png')} className="about-img"></img>
               <h2 className="about-title">大成日语</h2>
-              <div className="about-neirong">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;许多同学都是因为对日本文化感兴趣而学习日语的。优美的教学环境能够激发同学们的学习兴趣，使同学们能够更好的掌握日语。于是我们整体采用了优美的和风装修。在许多细节也添加了日系的元素。
+              <div className="about-neirong">许多同学都是因为对日本文化感兴趣而学习日语的。优美的教学环境能够激发同学们的学习兴趣，使同学们能够更好的掌握日语。于是我们整体采用了优美的和风装修。在许多细节也添加了日系的元素。
               </div>
               <div className="xiangshang">
                 <img src={require('./sjx.png')} className="about-img-xs"></img>
