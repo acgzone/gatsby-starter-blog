@@ -17,9 +17,9 @@ const Footer = () => {
           <div className="footer-lxwm"><Link to="/aboutDc"><span className="footer-lxwm1">关于我们</span></Link>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<Link to="/aboutus"><span className="footer-lxwm1">联系我们</span></Link></div>
           <div className="contact">
             <div className="footer-lx">
-              <div>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</div>
-              <div>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</div>
-              <div>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</div>
+              <div>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</div>
+              <div>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</div>
+              <div>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</div>
             </div>
             <div className="footer-lx1">
               <div className="footer-dz">成都市锦江区宏济新路5号  SOHO商务港309</div>
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           <div className="copyright">
             <div>Copyright@2006-2017</div>
-            <div>版权所属 成都大成合力教育资讯有限公司 未经许可 严禁复制</div>
+            <div>版权所属 成都大成合力教咨询有限公司 未经许可 严禁复制</div>
             <div>蜀ICP备13423432423号</div>
           </div>
         </div>
