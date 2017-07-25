@@ -8,10 +8,11 @@
 
 .about-daohang1 {
     color: #666;
-    float: left;
     font-size: 0.7rem;
-    margin-left: 9.5%;
-    margin-top: 5px;
+    max-width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 5px;
 }
 
 .about-daohang2 {
@@ -23,13 +24,13 @@
 }
 
 .abouts {
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
 .about {
-    width: 85%;
+    width: 950px;
     text-align: left;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .about-ls {
-    width: 85%;
+    width: 950px;
     position: relative;
     text-align: left;
     margin-bottom: 30px;
@@ -119,7 +120,7 @@
 .about-u {
     position: fixed;
     width: 150px;
-    right: 100px;
+    left: 80%;
     top: 200px;
     z-index: 4;
     border: 1px solid #e5e5e5;

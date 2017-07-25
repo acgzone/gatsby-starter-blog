@@ -33,7 +33,7 @@ class DefaultLayout extends React.Component {
       :
       <div>
         <Top quickstart={false} clickQuickstart={this.onClick.bind(this)} />
-        <div css={{ height: '113px', }} />
+        <div css={{ height: '123px', }} />
         <div>
           {this.props.children()}
         </div>
