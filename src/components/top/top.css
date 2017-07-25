@@ -22,7 +22,7 @@ header {
 .logo {
     margin: 0 auto;
     position: relative;
-    max-width: 80%;
+    max-width: 1200px;
     transition: 0.5s;
 }
 
@@ -39,7 +39,7 @@ header {
 
 .nav {
     position: relative;
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     transition: max-height .5s ease;
     overflow-y: hidden;

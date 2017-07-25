@@ -2,7 +2,7 @@
     display: flex;
     text-align: center;
     width: 100%;
-    max-width: 71%;
+    max-width: 870px;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@
 
 .title-new {
     width: 100%;
-    max-width: 71%;
+    max-width: 870px;
     margin: 0 auto;
 }
 
@@ -56,14 +56,14 @@
 }
 
 .index-tp {
-    max-width: 80%;
+    max-width: 870px;
     margin: 0 auto;
 }
 
 .index-mc {
     display: inline-block;
     position: relative;
-    width: 28%;
+    width: 32%;
     margin: 5px;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .news-img-img {
-    width: 48%;
+    width: 48.5%;
     display: inline-block;
     margin: 5px;
     vertical-align: middle;
