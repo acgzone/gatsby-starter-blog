@@ -51,7 +51,6 @@ render(){
   return <header>
     <div className="logo"
       css={{
-            marginTop: 8,
             height:this.state.oldTop==0?"80px":"70px"
         }}>
       <img src={require(quickstart ? "./close.png" : "./btn01.png")} className="bar" onClick={clickQuickstart}></img>
