@@ -18,7 +18,7 @@ class Index extends React.Component {
           <div className="about">
               <img src={require('./27profile_01.png')} className="about-img"></img>
               <h2 className="about-title">日语培训匠人</h2>
-              <div className="about-neirong">大成日语专注于日语教育培训、日本留学咨询，是专业的日语学习机构。始终致力于为学员提供更优质、更高效的一站式日语学习及日本留学服务。目前，大成日语旗下开设有入门日语、等级日语、旅游日语、少儿日语、留学日语、商务日语等各种课程，能够满足有不同日语学习需求的各类人群。
+              <div className="about-neirong">大成日语专注于日语教育培训、日本留学咨询，是专业的日语学习机构。始终致力于为学员提供更优质、更高效的日语学习及日本留学服务。目前，大成日语旗下开设有入门日语、等级日语、旅游日语、少儿日语、留学日语、商务日语等各种课程，能够满足有不同日语学习需求的各类人群。
               </div>
               <img src={require('./28profile_02.png')} className="about-img"></img>
               <h2 className="about-title">日本留学专家</h2>
