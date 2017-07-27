@@ -5,8 +5,8 @@ const News = ({ posts }) => {
     <div id="news">
       <div className="title1">
         <div className="title-dc-dc">
-          <span className="title-dc">&nbsp;最新资讯</span>
-          <span className="title-dc1">&nbsp;最新情報</span>
+          <span className="title-dc">&nbsp;新闻资讯</span>
+          <span className="title-dc1">&nbsp;ニュース情報</span>
         </div>
         <span className="more1">..................</span>
         <div className="title-more">

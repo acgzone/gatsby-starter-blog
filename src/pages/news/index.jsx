@@ -36,8 +36,8 @@ const News = (props) => {
   const posts = props.data.allMarkdownRemark.edges
   return (
   <NewsDiv>
-    <Helmet title="最新资讯" />
-    <Header><HeaderImg src={require('./news.png')} />&nbsp;&nbsp;&nbsp;<span>最新资讯</span></Header>
+    <Helmet title="新闻资讯" />
+    <Header><HeaderImg src={require('./news.png')} />&nbsp;&nbsp;&nbsp;<span>新闻资讯</span></Header>
     <ul
       css={{
         marginBottom: "30px",
