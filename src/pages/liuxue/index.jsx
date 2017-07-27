@@ -81,7 +81,7 @@ const Index = () => {
                 <Img src={require('./Overseas_01.png')}/>
                 <H3>高中生留学</H3>
                 <Title>留学条件</Title>
-                <IndentBiaoti1>高中生赴日留学需要申请语言学校。在语言学校进行学习期间可以参加日本统一组织的日本留学生考试，进入理想的日本大学。申请语言学校需要满足的条件有：</IndentBiaoti1>
+                <IndentBiaoti1>高中生赴日留学需要申请语言学校。在语言学校进行学习期间可以参加日本统一组织的日本留学生考试，从而进入理想的日本大学。申请语言学校需要满足的条件有：</IndentBiaoti1>
                 <Biaoti1>1、	在国内接受满12年正规教育（高中毕业）；</Biaoti1>
                 <Biaoti1>2、	有一定的日语学习经历（一般为180小时）；</Biaoti1>
                 <Biaoti1>3、	获得日本语能力测试N5级及以上证书（部分学校有要求）；</Biaoti1>
@@ -90,10 +90,9 @@ const Index = () => {
                 <Title>留学费用</Title>
                 <Biaoti1>语言学校相关费用：</Biaoti1>
                 <Biaoti1>1、	报名费：2000RMB左右</Biaoti1>
-                <Biaoti1>2、	一直徘徊在50音的日语爱好者</Biaoti1>
-                <Biaoti1>3、	入学金：3000RMB左右</Biaoti1>
-                <Biaoti1>4、	学费：一年80万日元左右（5万RMB左右）</Biaoti1>
-                <Biaoti1>5、	住宿费：宿舍一般较为便宜（1000RMB~3000RMB左右每月）</Biaoti1>
+                <Biaoti1>2、	入学金：3000RMB左右</Biaoti1>
+                <Biaoti1>3、	学费：一年80万日元左右（5万RMB左右）</Biaoti1>
+                <Biaoti1>4、	住宿费：宿舍一般较为便宜（1000RMB~3000RMB左右每月）</Biaoti1>
                 <Indent1Biaoti1>外面租住一般3000RMB左右每月（分地区）</Indent1Biaoti1>
                 <BottomBiaoti1>日本允许留学生申请打工，对家庭负担较小。</BottomBiaoti1>
             </Liuxue>
@@ -106,7 +105,7 @@ const Index = () => {
                 <Biaoti1>3、	申请语言学校（专科生一般先申请语言学校过度）：需要目前为止的学历证明，学习过一定时间的日语（日语学时证明），具体依学校而定；</Biaoti1>
                 <IndentBiaoti1>综上，留学条件里虽根据申请的等级不同而有所差异，但必不可少的一定是学习过日语，除此之外必须的就是有固定经济支付人，能保证你的学费正常交付。</IndentBiaoti1>
                 <Title>材料准备</Title>
-                <Biaoti1>1、	目前为止的学历证明书；</Biaoti1>
+                <Biaoti1>1、	学历证明书；</Biaoti1>
                 <Biaoti1>2、	日语学时证明或日语等级证书；</Biaoti1>
                 <Biaoti1>3、	经济支付人的经济能力证明（在职证明，收入证明）；</Biaoti1>
                 <Biaoti1>4、	申请学校统一式样的入学申请书，就学理由书，履历书等必填资料；</Biaoti1>
@@ -132,7 +131,7 @@ const Index = () => {
                 <Biaoti1>2、	学历为高中的参照高中生留学。</Biaoti1>
                 <Biaoti1>注：部分语言学校和大学对申请人年龄或毕业年限有要求，具体需咨询相关院校。</Biaoti1>
                 <Title>材料准备</Title>
-                <Biaoti1>1、	目前为止的学历证明书；</Biaoti1>
+                <Biaoti1>1、	学历证明书；</Biaoti1>
                 <Biaoti1>2、	日语学时证明或日语等级证书；</Biaoti1>
                 <Biaoti1>3、	经济支付人的经济能力证明（在职证明，收入证明）；</Biaoti1>
                 <Biaoti1>4、	申请学校统一式样的入学申请书，就学理由书，履历书等必填资料；</Biaoti1>
