@@ -103,3 +103,14 @@ div {
     padding: 1em 0;
     line-height: 2em;
 }
+
+.footer-lxqq {
+    position: fixed;
+    right: 70px;
+    bottom: 30px;
+    z-index: 4;
+}
+
+.footer-qqimg {
+    width: 126px;
+}

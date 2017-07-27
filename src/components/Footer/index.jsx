@@ -38,6 +38,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="footer-lxqq">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=396703883&site=qq&menu=yes" target="_blank"><img className="footer-qqimg" src={require('./lxqq.png')}/></a>
+      </div>
     </div>
 }
 
