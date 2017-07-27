@@ -13,7 +13,7 @@ const Index = () => {
     </div>
     <div className="courses">
         <div className="course" id="ryrm">
-            <img src={require('./course_01.png')} className="course-img"></img>
+            <img src={require('./course_01.png')} className="course-img marginT"></img>
             <div className="course-title-xs">
                 <h2 className="course-title">日语入门课程</h2>
                 <img className="course-title-xss" src={require('./course_xsj.png')}></img>

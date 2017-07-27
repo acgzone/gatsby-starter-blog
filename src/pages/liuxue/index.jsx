@@ -78,7 +78,7 @@ const Index = () => {
         </Daohang>
         <Liuxues>
             <Liuxue id="gaozhong">
-                <Img src={require('./Overseas_01.png')}/>
+                <Img src={require('./Overseas_01.png')} className="marginT"/>
                 <H3>高中生留学</H3>
                 <Title>留学条件</Title>
                 <IndentBiaoti1>高中生赴日留学需要申请语言学校。在语言学校进行学习期间可以参加日本统一组织的日本留学生考试，从而进入理想的日本大学。申请语言学校需要满足的条件有：</IndentBiaoti1>
