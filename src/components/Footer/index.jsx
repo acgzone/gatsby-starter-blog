@@ -28,9 +28,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="copyright">
-            <div>Copyright@2006-2017</div>
+            <div>Copyright@2016-2017</div>
             <div>版权所属 成都大成合力教咨询有限公司 未经许可 严禁复制</div>
-            <div>蜀ICP备13423432423号</div>
+            <div>蜀ICP备17023987号</div>
           </div>
         </div>
       </div>
