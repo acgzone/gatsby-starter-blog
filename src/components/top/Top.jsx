@@ -81,6 +81,7 @@ render(){
           <span className="rTitle">学院案内</span>
           <span className="title">关于大成</span>
           <div className="dropdown-content">
+            <div className="dropdown-content-div"/>
             <Link to="/aboutDc">大成简介</Link>
             <Link to="/aboutDc/about1">团队介绍</Link>
             <Link to="/aboutDc/about2">教学环境</Link>
@@ -90,6 +91,7 @@ render(){
           <span className="rTitle">コース紹介</span>
           <span className="title">日语课程</span>
           <div className="dropdown-content">
+            <div className="dropdown-content-div"/>
             <Link to="/course#ryrm">日语入门课程</Link>
             <Link to="/course#rydj">日语等级课程</Link>
             <Link to="/course#ky">口语课程</Link>
@@ -104,6 +106,7 @@ render(){
           <span className="rTitle">日本留学</span>
           <span className="title">日本留学</span>
           <div className="dropdown-content">
+            <div className="dropdown-content-div"/>
             <Link to="/liuxue#gaozhong">高中生留学</Link>
             <Link to="/liuxue#daxue">大学生留学</Link>
             <Link to="/liuxue#work">工作后留学</Link>

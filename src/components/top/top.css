@@ -101,11 +101,13 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff;
     min-width: 6em;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     width: 100%;
+}
+
+.dropdown-content-div {
+    height: 6px;
 }
 
 .dropdown-content a {
@@ -116,7 +118,8 @@ header {
     border-bottom: 1px solid #e1e1e1;
     margin: 0 6px;
     font-size: 0.8rem;
-    color: #696969
+    color: #696969;
+    background-color: #fff;
 }
 
 li:hover .dropdown-content {
