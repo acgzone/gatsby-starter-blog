@@ -26,6 +26,10 @@ const Footer = () => {
               <div className="footer-dz">028 – 84278169</div>
               <div className="footer-dz">396703883@qq.com</div>
             </div>
+            <div className="footer-lx2">
+              <img className="footer-img" src={require('./Wx.jpeg')}/>
+              <span>官方微信公众号</span>
+            </div>
           </div>
           <div className="copyright">
             <div>Copyright@2016-2017</div>
