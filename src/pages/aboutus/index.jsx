@@ -18,7 +18,7 @@ const Index = () => {
 					</div>
 				</div>
 				<div className="aboutus-xx">座机：028 – 84278169</div>
-				<div className="aboutus-xx">联系电话：17713547616</div>
+				<div className="aboutus-xx">联系电话：17713547616（颜兴）</div>
 				<div className="aboutus-xx">QQ：396703883</div>
 				<div className="aboutus-xx">邮箱：396703883@qq.com</div>
 				<div className="aboutus-nr">
