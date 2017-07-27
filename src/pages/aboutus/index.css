@@ -7,6 +7,7 @@
     /*vertical-align: middle;*/
     text-align: left;
     border-bottom: 1px solid #e5e5e5;
+    line-height: 30px;
 }
 
 .aboutus-tx {
@@ -49,7 +50,29 @@
     text-align: left;
     font-size: 16px;
     color: #333;
-    line-height: 60px;
+    line-height: 40px;
+}
+
+.aboutus-marginT {
+    margin-top: 20px;
+}
+
+.aboutus-marginB {
+    margin-bottom: 20px;
+}
+
+.aboutus-wx {
+    padding-left: 120px;
+    text-align: left;
+}
+
+.aboutus-wx-div {
+    display: inline-block;
+}
+
+.aboutus-wx-img {
+    display: block;
+    margin: 30px 60px;
 }
 
 body {
