@@ -60,6 +60,13 @@
     text-indent: 30px;
 }
 
+.about-neirong1 {
+    line-height: 2em;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 .about-ls {
     width: 950px;
     position: relative;
@@ -149,4 +156,8 @@
     padding-left: 52px;
     color: #333;
     font-size: 0.9rem;
+}
+
+.about-bottom {
+    margin-bottom: 30px;
 }
