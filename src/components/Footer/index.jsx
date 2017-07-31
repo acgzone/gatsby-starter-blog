@@ -18,12 +18,14 @@ const Footer = () => {
           <div className="contact">
             <div className="footer-lx">
               <div>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</div>
+              <div>座&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机：</div>
               <div>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</div>
               <div>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</div>
             </div>
             <div className="footer-lx1">
-              <div className="footer-dz">成都市锦江区宏济新路5号  SOHO商务港309</div>
+              <div className="footer-dz">成都市锦江区一环路东五段46号1栋5层16号</div>
               <div className="footer-dz">028 – 84278169</div>
+              <div className="footer-dz">17713547616（颜兴）</div>
               <div className="footer-dz">396703883@qq.com</div>
             </div>
             <div className="footer-lx2">
@@ -33,8 +35,8 @@ const Footer = () => {
           </div>
           <div className="copyright">
             <div>Copyright@2016-2017</div>
-            <div>版权所属 成都大成合力教咨询有限公司 未经许可 严禁复制</div>
-            <div>蜀ICP备17023987号</div>
+            <div>版权所属 成都大成合力教育咨询有限公司 未经许可 严禁复制</div>
+            <div>蜀ICP备17023987号-1</div>
           </div>
         </div>
       </div>

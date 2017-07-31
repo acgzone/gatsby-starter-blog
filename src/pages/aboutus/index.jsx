@@ -34,7 +34,7 @@ const Index = () => {
 					</div>
 				</div>
 				<div className="aboutus-xx aboutus-marginT">座机：028 – 84278169</div>
-				<div className="aboutus-xx">联系电话：17713547616（颜兴）</div>
+				<div className="aboutus-xx">电话：17713547616（颜兴）</div>
 				<div className="aboutus-xx">QQ：396703883</div>
 				<div className="aboutus-xx aboutus-marginB">邮箱：396703883@qq.com</div>
 				<div className="aboutus-nr">
@@ -43,7 +43,7 @@ const Index = () => {
 						<img src={require('./cont_sjx.png')} className="aboutus-xs"/>
 					</div>
 				</div>
-				<div className="aboutus-xx aboutus-marginT">联系地址：成都市锦江区宏济新路5号  SOHO商务港309</div>
+				<div className="aboutus-xx aboutus-marginT">联系地址：成都市锦江区一环路东五段46号1栋5层16号</div>
 				<div className="aboutus-xx aboutus-marginB">地铁：地铁2号线牛王庙站  出站5分钟即达</div>
 				
     </div>
