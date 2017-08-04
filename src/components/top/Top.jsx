@@ -115,7 +115,7 @@ render(){
         <li className="lis">
           <Link to="/news">
             <div className="Title">
-              <span className="rTitle">ニュース情報</span>
+              <span className="rTitle">ニュース</span>
               <span className="title">新闻资讯</span>
             </div>
           </Link>
