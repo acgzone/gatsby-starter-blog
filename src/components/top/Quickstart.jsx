@@ -68,6 +68,7 @@ const Quickstart = (props) => {
   ];
   return <div css={{
     backgroundColor: '#ecede8',
+    maxWidth: 1200,
     width: "100%",
     margin: "0 auto",
     marginTop: 140,
