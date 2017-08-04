@@ -4,7 +4,10 @@ import Helmet from "react-helmet"
 import './index.css'
 const Index = () => {
   return (
-<div>
+      <div css={{
+        maxWidth: 1200,
+        margin: '0 auto',
+      }}>
     <Helmet title="日语课程" />
     <div className="course-daohang">
         <div className="course-daohang1">

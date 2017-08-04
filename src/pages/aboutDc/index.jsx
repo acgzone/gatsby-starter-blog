@@ -7,7 +7,10 @@ class Index extends React.Component {
   render() {
 
     return (
-      <div>
+      <div css={{
+        maxWidth: 1200,
+        margin: '0 auto',
+      }}>
         <Helmet title="大成简介" />
         <div className="about-daohang">
             <div className="about-daohang1">

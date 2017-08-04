@@ -69,7 +69,10 @@ const BottomBiaoti1 = Biaoti1.extend`
 `
 const Index = () => {
   return (
-      <div>
+      <div css={{
+        maxWidth: 1200,
+        margin: '0 auto',
+      }}>
        <Helmet title="日本留学" />
         <Daohang>
             <Daohang1>
