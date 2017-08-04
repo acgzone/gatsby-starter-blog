@@ -1,3 +1,8 @@
+#main {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
 .title1 {
     display: flex;
     text-align: center;
@@ -118,11 +123,9 @@
 }
 
 .index-u {
-    position: fixed;
+    position: absolute;
     width: 202px;
-    right: 100px;
-    top: 150px;
-    z-index: 4;
+    right: 10px;
     border: 1px solid #e5e5e5;
 }
 
