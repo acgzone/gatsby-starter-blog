@@ -7,7 +7,7 @@ const Liuxue = () => {
           <span className="title-dc">&nbsp;留学日本</span>
           <span className="title-dc1">&nbsp;留学日本</span>
         </div>
-        <span className="more1">..................</span>
+        <span className="more1">.......................................................................</span>
         <div className="title-more">
           <Link to="/liuxue">
             <span className="more">更多</span>

@@ -4,10 +4,10 @@ const Course = () => {
     <div id="course">
       <div className="title1">
         <div className="title-dc-dc">
-          <span className="title-dc">&nbsp;多彩课程</span>
-          <span className="title-dc1">&nbsp;多彩なコース</span>
+          <span className="title-dc">多彩课程</span>
+          <span className="title-dc1">多彩なコース</span>
         </div>
-        <span className="more1">..................</span>
+        <span className="more1">.......................................................................</span>
         <div className="title-more">
           <Link to="/course">
             <span className="more">更多</span>

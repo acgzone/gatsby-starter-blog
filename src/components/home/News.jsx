@@ -8,7 +8,7 @@ const News = ({ posts }) => {
           <span className="title-dc">&nbsp;新闻资讯</span>
           <span className="title-dc1">&nbsp;ニュース情報</span>
         </div>
-        <span className="more1">..................</span>
+        <span className="more1">.......................................................................</span>
         <div className="title-more">
           <Link to="/news">
             <span className="more">更多</span>
