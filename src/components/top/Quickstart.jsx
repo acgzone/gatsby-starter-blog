@@ -10,13 +10,13 @@ const CourseDiv = styled.div`
     transition: transform 1s;
   }
 `
-const CourseImg =  styled.img`
+const CourseImg = styled.img`
   width: 355px;
   height: 225px;
   margin: 0 10px;
   border: 1px solid #fff;
 `
-const CourseSpan= styled.span`
+const CourseSpan = styled.span`
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -78,7 +78,7 @@ const Quickstart = (props) => {
     marginTop: 140,
   }}>
     {list.map(post => {
-      return <Link to={post.link}>
+      return <Link key={post.link} to={post.link}>
         <CourseDiv>
           <CourseImg src={require('./' + post.img)} />
           <CourseSpan>{post.title}</CourseSpan>
