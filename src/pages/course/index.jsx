@@ -60,6 +60,23 @@ const Index = () => {
             <div className="course-biaoti1">4、	希望进入日企工作的同学</div>
             <div className="course-biaoti1 course-bottom">5、	其他对日语感兴趣的同学</div>
         </div>
+        <div className="course" id="ky">
+            <img src={require('./course_04.png')} className="course-img"></img>
+            <div className="course-title-xs">
+                <h2 className="course-title">口语课程</h2>
+                <img className="course-title-xss" src={require('./course_xsj.png')}></img>
+            </div>
+            <div className="course-xin">★ 富有经验的外教</div>
+            <div className="course-xin">★ 海归教学团队</div>
+            <div className="course-xin">★ 日企培训主管</div>
+            <div className="course-biaoti">学习目标</div>
+            <div className="course-biaoti1">1、	用日语进行简单的日常交流</div>
+            <div className="course-biaoti1">2、	让在日企工作的你口语精进、更加自信</div>
+            <div className="course-biaoti1">3、	提高已有的日语会话能力</div>
+            <div className="course-biaoti">适合对象</div>
+            <div className="course-biaoti1">1、	有一定日语基础（初级）的学员</div>
+            <div className="course-biaoti1 course-bottom">2、	希望短期提高日语口语能力的同学</div>
+        </div>
         <div className="course" id="rylx">
             <img src={require('./course_03.png')} className="course-img"></img>
             <div className="course-title-xs">
@@ -80,23 +97,6 @@ const Index = () => {
             <div className="course-biaoti1">4、	掌握日本留学行前知识</div>
             <div className="course-biaoti">适合对象</div>
             <div className="course-biaoti1 course-bottom">希望赴日留学的同学</div>
-        </div>
-        <div className="course" id="ky">
-            <img src={require('./course_04.png')} className="course-img"></img>
-            <div className="course-title-xs">
-                <h2 className="course-title">口语课程</h2>
-                <img className="course-title-xss" src={require('./course_xsj.png')}></img>
-            </div>
-            <div className="course-xin">★ 富有经验的外教</div>
-            <div className="course-xin">★ 海归教学团队</div>
-            <div className="course-xin">★ 日企培训主管</div>
-            <div className="course-biaoti">学习目标</div>
-            <div className="course-biaoti1">1、	用日语进行简单的日常交流</div>
-            <div className="course-biaoti1">2、	让在日企工作的你口语精进、更加自信</div>
-            <div className="course-biaoti1">3、	提高已有的日语会话能力</div>
-            <div className="course-biaoti">适合对象</div>
-            <div className="course-biaoti1">1、	有一定日语基础（初级）的学员</div>
-            <div className="course-biaoti1 course-bottom">2、	希望短期提高日语口语能力的同学</div>
         </div>
         <div className="course" id="xq">
             <img src={require('./course_05.png')} className="course-img"></img>

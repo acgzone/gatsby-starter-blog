@@ -11,6 +11,10 @@ class Top extends React.Component {
       showSideBar: false,
       oldTop: 0
     }
+    this.scroll = {
+      lastTime: Date.now(),
+      times: 0,
+    }
     this.handleScroll = this.handleScroll.bind(this);// 直接把this.handleScroll.bind(this);写在addEventListener和removeEventListener里面的话，会导致两次bind(this)的不是同一个函数，会remove不掉，存在内存泄露
   }
   componentDidMount() {
@@ -20,7 +24,21 @@ class Top extends React.Component {
     console.log('componentWillUnmount: remove handleScroll')
     window.removeEventListener('scroll', this.handleScroll);
   }
+
   handleScroll(e) {
+    if (Date.now() - this.scroll.lastTime < 100) {// 100ms之内的scroll才累加
+      this.scroll.times += 1;
+    } else { // 否则不连续的scroll应该是点击菜单造成的， 不影响顶部变化
+      this.scroll.times = 1;
+    }
+    this.scroll.lastTime = Date.now();
+    if (this.scroll.times < 10) {
+      return;
+    }
+
+    this.safeScroll(e);
+  }
+  safeScroll(e) {
     const scrollTop = this.getScrollTop();
     // console.log('scroll...', scrollTop)
     // todo 缩放比例会影响这个值， 应该也要“自适应”屏幕大小
@@ -97,8 +115,8 @@ class Top extends React.Component {
               <Link to="/course#ky">口语课程</Link>
               <Link to="/course#rylx">日语留学课程</Link>
               <Link to="/course#xq">兴趣课程</Link>
-              <Link to="/course#ly">旅游课程</Link>
-              <Link to="/course#se">少儿课程</Link>
+              <Link to="/course#ly">旅游日语</Link>
+              <Link to="/course#se">少儿日语</Link>
               <Link to="/course#tbdz">特别定制课程</Link>
             </div>
           </li>

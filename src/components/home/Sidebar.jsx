@@ -1,7 +1,6 @@
 import Link from "gatsby-link"
 
 const Sidebar = ({ scrollTop }) => {
-  console.log(scrollTop)
   const top = scrollTop - 500 > 50 ? scrollTop - 500 : 50;
   return <div className="index-u" css={{ top }}>
     <ul className="index-ul">
