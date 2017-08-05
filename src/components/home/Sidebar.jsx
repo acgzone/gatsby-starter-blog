@@ -1,7 +1,7 @@
 import Link from "gatsby-link"
 
 const Sidebar = ({ scrollTop }) => {
-  const top = scrollTop - 500 > 50 ? scrollTop - 500 : 50;
+  const top = scrollTop > 550 ? scrollTop - 500 : 50;
   return <div className="index-u" css={{ top }}>
     <ul className="index-ul">
       <li className="index-li"><span><img className="index-lis-img" src={require('./index.png')} /><span>&nbsp;&nbsp;首页</span></span><span className="index-u-flex1">ホーム</span></li>

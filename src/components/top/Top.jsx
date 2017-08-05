@@ -8,13 +8,13 @@ class Top extends React.Component {
   constructor() {
     super();
     this.state = {
-      showSideBar: false,
-      oldTop: 0
+      hideMenu: false,
     }
     this.scroll = {
       lastTime: Date.now(),
       times: 0,
     }
+    this.oldTop = 0;
     this.handleScroll = this.handleScroll.bind(this);// 直接把this.handleScroll.bind(this);写在addEventListener和removeEventListener里面的话，会导致两次bind(this)的不是同一个函数，会remove不掉，存在内存泄露
   }
   componentDidMount() {
@@ -32,7 +32,12 @@ class Top extends React.Component {
       this.scroll.times = 1;
     }
     this.scroll.lastTime = Date.now();
-    if (this.scroll.times < 10) {
+    const scrollTop = this.getScrollTop();
+    if (this.scroll.times <= 3) {
+      this.oldTop = scrollTop;
+      this.setState({
+        hideMenu: false,
+      })
       return;
     }
 
@@ -40,19 +45,12 @@ class Top extends React.Component {
   }
   safeScroll(e) {
     const scrollTop = this.getScrollTop();
-    // console.log('scroll...', scrollTop)
+    console.log('scroll...', scrollTop)
     // todo 缩放比例会影响这个值， 应该也要“自适应”屏幕大小
-    if (scrollTop - this.state.oldTop > 0) {
-      this.setState({
-        oldTop: scrollTop,
-        showSideBar: true,
-      })
-    } else {
-      this.setState({
-        oldTop: scrollTop,
-        showSideBar: false,
-      })
-    }
+    this.setState({
+      hideMenu: scrollTop - this.oldTop > 0,
+    })
+    this.oldTop = scrollTop;
   }
   getScrollTop() {
     var scrollTop = 0;
@@ -82,12 +80,12 @@ class Top extends React.Component {
       <div className="logo-border" />
       <div
         css={{
-          maxHeight: this.state.showSideBar ? 0 : 50,
+          maxHeight: this.state.hideMenu ? 0 : 50,
         }}
         className="nav">
         <ul
           css={{
-            display: this.state.showSideBar ? "none" : "block",
+            display: this.state.hideMenu ? "none" : "block",
           }}>
           <li className="noslash lis">
             <Link to="/">
