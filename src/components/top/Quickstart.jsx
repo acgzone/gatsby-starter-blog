@@ -5,6 +5,10 @@ import styled from 'styled-components'
 const CourseDiv = styled.div`
   display: inline-block;
   position: relative;
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 1s;
+  }
 `
 const CourseImg =  styled.img`
   width: 355px;
