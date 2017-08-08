@@ -20,7 +20,7 @@ const News = ({ posts }) => {
         {posts.map(post =>{
           return <a href={post.node.frontmatter.link} target="_blank">
             <div key={post.node.fields.slug} className="news-img-img">
-              <img src={require(post.node.frontmatter.img)} className="news-imgs"></img>
+              <img src={require(`${post.node.frontmatter.img}`)} className="news-imgs"></img>
               <div className="title-new-tilte">{post.node.frontmatter.title}</div>
             </div>
           </a>
