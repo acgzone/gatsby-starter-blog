@@ -1,6 +1,10 @@
+// https://notanoctopus.github.io/open-face-chinese-poker-fantasyland/
 function sortDesc(cards) {
   if (cards.length === 3) {
-    let [a, b, c] = cards;
+    // let [a, b, c] = cards; // 编译后用paralleljs，找不到_slice2Array， 用chrome没有报错， 用FF才发现的！
+    let a = cards[0];
+    let b = cards[1];
+    let c = cards[2];
     if (a < b) {
       [a, b] = [b, a]
     }
@@ -162,7 +166,10 @@ function biggerThan(first, second) { // require first.length >= second.length ??
   return true;
 };
 
-function topScore([type, rank]) {
+// function topScore([type, rank]) {
+function topScore(cardType) {
+  const type = cardType[0];
+  const rank = cardType[1];
   if (type == 3) {
     return 8 + rank;
   }
@@ -172,19 +179,19 @@ function topScore([type, rank]) {
   return 0;
 }
 
-
-function middleScore([type]) {
+function middleScore(types) {
+  const type = types[0];
   const middleScoreTable = [0, 0, 0, 2, 4, 8, 12, 20, 30, 50];
 
   return middleScoreTable[type];
 }
 
-function bottomScore([type]) {
+function bottomScore(types) {
+  const type = types[0];
   const bottomScoreTable = [0, 0, 0, 0, 2, 4, 6, 10, 15, 25];
 
   return bottomScoreTable[type];
 }
-
 
 function omfg(cards) { // 13 of them, takes like a second
   let bestScore = -1;
@@ -218,7 +225,7 @@ function omfg(cards) { // 13 of them, takes like a second
                   const bottomCardType = getFrom5Cards(bottom);
                   // const bottomCardType = getFrom5CardsWithCache(bottom);
                   if (biggerThan(bottomCardType, middleCardType)) {
-                  // if (biggerThan(middleCardType, topCardType) && biggerThan(bottomCardType, middleCardType)) {
+                    // if (biggerThan(middleCardType, topCardType) && biggerThan(bottomCardType, middleCardType)) {
                     const score = topScore(topCardType) + middleScore(middleCardType) + bottomScore(bottomCardType);
                     if (score > bestScore) {
                       bestScore = score;
@@ -258,12 +265,111 @@ function omfg14(cards) { // 14 of them, takes like 15-20 seconds
   }
 }
 
+function testParallel(cards) {
+  let bestScore = -1;
+  let bestCardsList = ['', '', ''];
+
+  let [a, b, c] = cards;
+  console.log('cards: ', a, b, c, cards)
+  function k() {
+    // console.log('cards in k...: ', cards)
+    // const [a, b] = cards
+    // console.log(a, b)
+    Math.max(2, 3)
+    "abcd".slice(3)
+    return 1;
+  }
+  function j() { return k(); }
+  function h(n) {
+    j();
+    return n + 1;
+  }
+  var slowSquare = function (n) {
+    console.log('slowSquare start: ', n)
+    var i = 0;
+    while (++i < n * n) { }
+    h(n) // 调用其他函数就不行， 也没有报错信息？！
+    return i;
+  };
+  // Create a job
+  var p1 = new Parallel([10000, 10000])
+    .require(k)
+    .require(j)
+    .require(h)
+  // Spawn our slow function
+  const start = Date.now();
+  // p1.map(slowSquare).reduce(data => {
+  var f = function (n) {
+    console.log('f====');
+    return slowSquare(n);
+  }
+  var g = function (n) {
+    console.log('g start: ', n)
+    return slowSquare(n)
+    var i = 0;
+    while (++i < n * n) { }
+    return i;
+  };
+  console.log(f.name, g.name, slowSquare.name)
+  p1.map(slowSquare).reduce(data => {
+    console.log(data);
+    return data[0] + data[1];
+  }).then((data) => {
+    const end = Date.now();
+    console.log(`${data} cost: ${end - start} ms.`);
+  })
+  return {
+    answer: bestCardsList,
+    score: bestScore,
+  }
+}
+function omfg14Parallel(cards) {
+  // return testParallel(cards);
+
+  let bestScore = -1;
+  let bestCardsList = ['', '', ''];
+
+  const allCopyCards = [];
+  for (let i = 0; i < 14; i += 1) {
+    const copyCards = cards.slice();
+    copyCards.splice(i, 1);
+    allCopyCards.push(copyCards);
+  }
+  const start = Date.now();
+  const p = new Parallel(allCopyCards).require(omfg)
+    .require(getRanks)
+    .require(getFromTop)
+    .require(getFrom5Cards)
+    .require(biggerThan)
+    .require(topScore)
+    .require(middleScore)
+    .require(bottomScore)
+    .require(getColors)
+    .require(sameColorF)
+    .require(sortDesc)
+  p.map(omfg).reduce(data => {
+    const acc = data[0];
+    const e = data[1];
+    if (e.score > acc.score) {
+      acc.score = e.score;
+      acc.answer = e.answer;
+    }
+    return acc;
+  }).then(data => {
+    const end = Date.now();
+    console.log(`result: ${data} cost: ${end - start} ms.`);
+    return data;
+  })
+  return p;
+}
+
 
 function calculate(cards) {
   if (cards.length == 13) {
     return omfg(cards);
   }
   else {
+    return omfg14Parallel(cards);
     return omfg14(cards);
   }
 }

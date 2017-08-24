@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet"
 
 import calculateFantasy, { AllCards, getRandomCards } from '../../../utils/poker-fantasy';
 
@@ -60,10 +61,26 @@ class Index extends React.Component {
       });
     }
     this.setState({
-      msg: 'caculating...预计时间' + (cards.length === 13 ? '1s' : '7s')
+      msg: 'caculating...预计时间' + (cards.length === 13 ? '1s' : '2s')
     })
     setTimeout(() => {
       console.log('caculating...', this.state.cards);
+      if (this.state.cards.length === 14) {
+        const p = calculateFantasy(this.state.cards);
+        p.then(data => {
+          const { answer, score } = data;
+          console.log('caculated...', answer, score)
+          this.setState({
+            msg: `
+      top: ${this.formatPokers(answer[0])} \n
+      middle: ${this.formatPokers(answer[1])} \n
+      bottom: ${this.formatPokers(answer[2])} \n
+      total scores is : ${score}
+      `
+          });
+        })
+        return;
+      }
       const { answer, score } = calculateFantasy(this.state.cards);
       console.log('caculated...', answer, score)
       this.setState({
@@ -93,6 +110,9 @@ class Index extends React.Component {
 
   render() {
     return <div>
+      {
+        <Helmet script={[{ src: `/parallel.js`, type: `text/javascript` }]} />
+      }
       <br />
       <img src={require('./02s.jpg')} onClick={this.choosePoker('02s')} />
       <img src={require('./03s.jpg')} onClick={this.choosePoker('03s')} />
