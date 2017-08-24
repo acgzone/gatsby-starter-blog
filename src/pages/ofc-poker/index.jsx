@@ -54,25 +54,27 @@ class Index extends React.Component {
   }
   calculate() {
     const cards = this.state.cards;
-    if ((cards.length != 13) && (cards.length != 14)) {
+    if ((cards.length !== 13) && (cards.length !== 14)) {
       this.setState({
         msg: 'needs to be 13 cards for standard ofc or 14 for pineapple'
       });
     }
     this.setState({
-      msg: 'caculating...'
+      msg: 'caculating...预计时间' + (cards.length === 13 ? '1s' : '7s')
     })
-    console.log('caculating...', this.state.cards);
-    const { answer, score } = calculateFantasy(this.state.cards);
-    console.log('caculated...', answer, score)
-    this.setState({
-      msg: `
+    setTimeout(() => {
+      console.log('caculating...', this.state.cards);
+      const { answer, score } = calculateFantasy(this.state.cards);
+      console.log('caculated...', answer, score)
+      this.setState({
+        msg: `
       top: ${this.formatPokers(answer[0])} \n
       middle: ${this.formatPokers(answer[1])} \n
       bottom: ${this.formatPokers(answer[2])} \n
       total scores is : ${score}
       `
-    });
+      });
+    }, 10)// 避免calculateFantasy长时间计算， setState之后msg渲染不出来， 界面卡死
   }
   reset() {
     this.setState({
@@ -80,9 +82,9 @@ class Index extends React.Component {
       msg: '',
     });
   }
-  randomChoosePoker() {
+  randomChoosePoker(n) {
     // console.log(AllCards)
-    const cards = getRandomCards();
+    const cards = getRandomCards(n);
     // console.log(cards)
     this.setState({
       cards
@@ -152,7 +154,8 @@ class Index extends React.Component {
 
       <button type="button" onClick={this.calculate.bind(this)}>Calculate</button>
       <button type="button" onClick={this.reset.bind(this)}>Reset</button>
-      <button type="button" onClick={this.randomChoosePoker.bind(this)}>Random</button>
+      <button type="button" onClick={this.randomChoosePoker.bind(this, 13)}>Random13</button>
+      <button type="button" onClick={this.randomChoosePoker.bind(this, 14)}>Random14</button>
 
       {/* <p>{this.formatPokers(this.state.cards).join(', ')}</p> */}
       <div style={{ marginTop: 12 }}>{
