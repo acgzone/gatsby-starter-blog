@@ -46,10 +46,7 @@ class Index extends React.Component {
               </li>
             )}
           </ul>
-           <p>Powerd By <a href="https://github.com/gatsbyjs/gatsby" target="_blank">Gatsby</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           Hosted by {codingnet ? <a href="https://pages.coding.me" target="_blank" style={{"font-weight": "bold"}}>Coding Pages</a> : 
-                                  <a href="https://netlify.com" target="_blank" style={{"font-weight": "bold"}}>Netlify</a>}
-           </p>
+           <p style={{textAlign: "center"}}>Powerd By <a href="https://github.com/gatsbyjs/gatsby" target="_blank">Gatsby</a></p>
       </div>
     )
   }
@@ -62,7 +59,6 @@ query IndexQuery {
   site {
     siteMetadata {
       title
-      codingnet
     }
   }
   allMarkdownRemark(
